@@ -1,0 +1,99 @@
+.contact_section{
+    background-color: #FFFDEE;
+}
+.section_contact_title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43 / 40);
+    letter-spacing: 0.3em;
+    color: #494848;
+    padding-top: 36px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+.section_contact_description{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.02em;
+    color: #5F5F5F;
+    margin-bottom: 24px;
+}
+.firstlist_section_contact{
+    display: flex;
+    gap: 22px;
+    margin-bottom: 32px;
+    align-items: baseline;
+}
+.first_item_contact{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+    color: #C79002;
+}
+.tel_item_contact_res{
+    width: 144px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+}
+.restaurant_phonenumber{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: rgba(73, 72, 72, 1);
+}
+.secondlist_section_contact{
+    display: flex;
+    gap: 22px;
+    margin-bottom: 32px;
+    align-items: baseline;
+}
+.second_item_contact{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+    color: #C79002;
+}
+.tel_item_contact_hot{
+    width: 260px;
+    height: 40px; 
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px;
+}
+.hotel_phonenumber{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    color: rgba(73, 72, 72, 1);
+}
+.hotel_phonenumber:not(:last-child) {
+    margin-right: 12px;
+}
+.adress_container_contact{
+    max-width: 260px;
+    height: 76px;
+    background-color: #fff;
+    border: 0.5px solid #F3C653;
+    border-radius: 2px; 
+    text-align: left;
+}
+.section_contact_adress{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    letter-spacing: 0.01em;
+    color: #494848;
+}
