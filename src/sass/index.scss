@@ -1,14 +1,19 @@
 // utils
 @import './utils/module';
+@import './utils/fonts';
+@import './utils/vars';
+@import './utils/mixins';
 
 // base
 @import './base/module';
+@import './base/reset';
 
 // components
 @import './components/module';
 
 // layout
 @import './layout/module';
+@import './layout/footer';
 
 // pages
 @import './pages/module';
