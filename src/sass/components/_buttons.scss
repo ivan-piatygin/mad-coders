@@ -1,0 +1,115 @@
+.hero-homepage__button {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    padding: 14px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #FFFFFF;
+    }
+}
+
+.hero-mainpage__button {
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: calc(20/16);
+    letter-spacing: 0.02em;
+    color: #F3C653;
+    padding: 14px 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #FFFFFF;
+    }
+}
+
+.order-button {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(29/24);
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 18px 38px;
+    background-color: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 25px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #F3C653;
+        color: #000000;
+
+    }
+
+}
+
+.modal__button {
+    background-color: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: calc(29/24);
+    color: #FFFFFF;
+    padding: 18px 117px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: #000000;
+        background-color: #F3C653;
+    }
+}
+
+.modal-tel__button {
+    background-color: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    padding: 20px 43px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #F3C653;
+        color: #000000;
+    }
+}
+
+.form-tel__button {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #000000;
+    border: 1px solid #F3C653;
+    border-radius: 2px;
+    padding: 20px 43px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #F3C653;
+        color: #000000;
+    }
+}
