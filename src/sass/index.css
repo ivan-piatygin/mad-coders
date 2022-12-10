@@ -12,6 +12,19 @@
   margin-bottom: 12px;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1024px) {
+  .section_contact_title {
+    font-size: 64px;
+    line-height: 1.078125;
+    margin-bottom: 8px;
+    padding-top: 56px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section_contact_title {
+    margin-bottom: 16px;
+  }
+}
 
 .section_contact_description {
   font-weight: 600;
@@ -21,12 +34,33 @@
   color: #5F5F5F;
   margin-bottom: 24px;
 }
+@media screen and (min-width: 1024px) {
+  .section_contact_description {
+    margin-bottom: 52px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .section_contact_description {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+  }
+}
 
 .firstlist_section_contact {
   display: flex;
   gap: 22px;
   margin-bottom: 32px;
   align-items: baseline;
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  .firstlist_section_contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+  }
 }
 
 .first_item_contact {
@@ -51,9 +85,15 @@
 .restaurant_phonenumber {
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.2142857143;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: rgb(73, 72, 72);
+}
+@media screen and (min-width: 1280px) {
+  .restaurant_phonenumber {
+    color: #828282;
+  }
 }
 
 .secondlist_section_contact {
@@ -61,6 +101,15 @@
   gap: 22px;
   margin-bottom: 32px;
   align-items: baseline;
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  .secondlist_section_contact {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 48px;
+  }
 }
 
 .second_item_contact {
@@ -87,7 +136,13 @@
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.02em;
+  text-decoration: none;
   color: rgb(73, 72, 72);
+}
+@media screen and (min-width: 1280px) {
+  .hotel_phonenumber {
+    color: #828282;
+  }
 }
 
 .hotel_phonenumber:not(:last-child) {
@@ -109,4 +164,10 @@
   line-height: 1.25;
   letter-spacing: 0.01em;
   color: #494848;
+  text-decoration: none;
+}
+@media screen and (min-width: 1280px) {
+  .section_contact_adress {
+    color: #828282;
+  }
 }/*# sourceMappingURL=index.css.map */

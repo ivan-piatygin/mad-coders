@@ -10,6 +10,15 @@
     padding-top: 36px;
     margin-bottom: 12px;
     text-transform: uppercase;
+    @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        line-height: calc(69 / 64);
+        margin-bottom: 8px;
+        padding-top: 56px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 16px;
+    }
 }
 .section_contact_description{
     font-weight: 600;
@@ -18,12 +27,27 @@
     letter-spacing: 0.02em;
     color: #5F5F5F;
     margin-bottom: 24px;
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 52px;
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 20px;
+        line-height: calc(24 / 20);
+        margin-bottom: 40px;
+    }
 }
 .firstlist_section_contact{
     display: flex;
     gap: 22px;
     margin-bottom: 32px;
     align-items: baseline;
+    list-style: none;
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 24px;
+    }
 }
 .first_item_contact{
     font-weight: 500;
@@ -45,15 +69,27 @@
 .restaurant_phonenumber{
     font-weight: 400;
     font-size: 14px;
-    line-height: 17px;
+    line-height: calc(17 / 14);
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: rgba(73, 72, 72, 1);
+    @media screen and (min-width: 1280px) {
+        color: #828282;
+    }
+    
 }
 .secondlist_section_contact{
     display: flex;
     gap: 22px;
     margin-bottom: 32px;
     align-items: baseline;
+    list-style: none;
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 48px;
+    }
 }
 .second_item_contact{
     font-weight: 500;
@@ -77,7 +113,11 @@
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.02em;
+    text-decoration: none;
     color: rgba(73, 72, 72, 1);
+    @media screen and (min-width: 1280px) {
+        color: #828282
+    }
 }
 .hotel_phonenumber:not(:last-child) {
     margin-right: 12px;
@@ -96,4 +136,8 @@
     line-height: calc(20 / 16);
     letter-spacing: 0.01em;
     color: #494848;
+    text-decoration: none;
+    @media screen and (min-width: 1280px) {
+        color: #828282
+    }
 }
