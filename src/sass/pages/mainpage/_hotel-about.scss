@@ -1,6 +1,14 @@
 .hotel-about{
     text-align: right;
     background: #FFFDEE;
+
+    // @media screen and(min-width: $tablet) {
+    //     position: relative;
+    // }
+}
+
+.container{
+    position: relative;
 }
 
 ul {
@@ -16,6 +24,13 @@ ul {
     letter-spacing: 0.3em;
     color: #494848;
     margin-bottom: 16px;
+
+    @media screen and(min-width: $tablet) {
+        font-size: 64px;
+        line-height: calc(69/64);
+        letter-spacing: 0.3em;
+        margin-bottom: 24px;
+    }
 }
 
 .hotel-about__decription{
@@ -26,6 +41,12 @@ ul {
     line-height: calc(23/20);
     color: #B4B4B4;
     margin-bottom: 6px;
+
+    @media screen and(min-width: $tablet) {
+        font-size: 32px;
+        line-height: calc(37/32);
+        margin-bottom: 4px;
+    }
 }
 
 .list__description{
@@ -33,13 +54,21 @@ ul {
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
-    margin-left: auto;
-    line-height: 15px;
+    line-height: calc(15/12);
     letter-spacing: 0.02em;
     color: $second-text-color;
     width: 242px;
     text-align: left;
+    margin-left: auto;
     margin-bottom: 26px;
+
+    @media screen and(min-width: $tablet) {
+        margin-bottom: 142px;
+        font-size: 16px;
+        line-height: calc(20/16);
+        color: $second-text-color;
+        width: 419px;
+    }
 }
 
 .hotel-about__list{
@@ -52,6 +81,12 @@ ul {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     margin-bottom: 32px;
+
+    @media screen and(min-width: $tablet) {
+        position: absolute;
+        top: -24px;
+        left: 30px;
+    }
 }
 
 .hotel-about__list-second{
