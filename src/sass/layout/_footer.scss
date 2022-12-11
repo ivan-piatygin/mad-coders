@@ -1,14 +1,26 @@
+<<<<<<< Updated upstream
 footer {
     height: 300px;
     background-color: $footer-background;
     display: flex;
 }
 footer .container {
+=======
+.footer {
+    height: 240px;
+    background-color: $footer-background;
+    display: flex;
+    @include tablet{height: 304px;}
+}
+
+.footer .container {
+>>>>>>> Stashed changes
     padding: 0;
     width: 100%;
     display: flex;
     align-items: center;
 }
+<<<<<<< Updated upstream
 .logo {
     display: inline-block;
     font-family: $film-font;
@@ -26,10 +38,43 @@ footer .container {
 .block {
     width: 50%;
     margin-left: 85px;
+=======
+
+.logo {
+    display: inline-block;
+    font-family: $film-font;
+    @include font(40px, calc(43/40), 700, 0.3em);
+    color: $accent-color;
+    text-transform: uppercase;
+
+    @media screen and(max-width:1023px) {
+        margin-left: 59px;
+        max-width: 127px;
+    }
+
+    @include tablet {
+        font-size: 64px;
+        line-height: calc(69/64);
+        margin-left: 0px;
+    }
+}
+
+.block-logo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.block-navigation {
+    width: 50%;
+    margin-left: 85px;
+
+>>>>>>> Stashed changes
     @include tablet {
         margin-left: 0px;
         display: flex;
         flex-direction: row;
+<<<<<<< Updated upstream
         align-items: baseline;   
     }
     
@@ -48,10 +93,37 @@ footer .container {
 .navigation__item {
     &:not(:last-child){margin-bottom: 16px;}
                 @include tablet {
+=======
+        align-items: baseline;
+    }
+
+}
+
+.footer-navigation {
+    margin-bottom: 32px;
+
+    @include tablet {
+        margin-bottom: 0;
+        margin-right: 137px;
+    }
+
+    @include desktop {
+        margin-right: 199px;
+    }
+}
+
+.footer-navigation__item {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    @include tablet {
+>>>>>>> Stashed changes
         margin-bottom: 0;
     }
 }
 
+<<<<<<< Updated upstream
 .navigation__link {
     font-family: $montserrat-font;
     display: inline-block;
@@ -60,12 +132,23 @@ footer .container {
 }
 
 .navigation__link:last-child {
+=======
+.footer-navigation__link {
+    font-family: $montserrat-font;
+    display: inline-block;
+    color: $accent-color;
+    @include font(20px, calc(24 / 20), 500, 0.02em);
+}
+
+.footer-navigation__link:last-child {
+>>>>>>> Stashed changes
     margin-bottom: 0;
 }
 
 .social {
     display: flex;
     gap: 20px;
+<<<<<<< Updated upstream
     @include tablet {
         display: block;
     
@@ -74,12 +157,24 @@ footer .container {
 .social__link {
     @include tablet
     {
+=======
+
+    @include tablet {
+        display: block;
+
+    }
+}
+
+.social__link {
+    @include tablet {
+>>>>>>> Stashed changes
         display: inline-flex;
         justify-content: space-between;
         text-decoration: none;
         padding: 10px 12px;
         border: 0.5px solid $accent-color;
         border-radius: 2px;
+<<<<<<< Updated upstream
         width: 144px; 
 &:not(:last-child) {
         margin-bottom: 12px;
@@ -107,3 +202,40 @@ footer .container {
     width: 24px;
     height: 24px;
     background-color: green;}
+=======
+        width: 144px;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+
+}
+.social__item {
+    @include tablet {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+.social__name {
+    display: none;
+
+    @include tablet {
+        display: inline-block;
+        font-family: 'Montserrat';
+        @include font(16px, calc(20/16), 400, 00.02em);
+        color: $accent-color;
+    }
+}
+
+.social__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    @include tablet {
+opacity: 1;
+    }
+}
+>>>>>>> Stashed changes
