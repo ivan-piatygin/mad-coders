@@ -100,72 +100,50 @@ img {
   }
 }
 
-.contact_section {
-  background-color: #FFFDEE;
+.section_contacts {
+  background-color: rgb(255, 253, 238);
+  padding-top: 36px;
+  padding-bottom: 32px;
 }
 
-.section_contact_title {
+.contacts_title {
+  font-family: "FilmP3";
+  src: url(../fonts/FilmP3Bold.woff), url(../fonts/FilmP3Bold.ttf);
   font-weight: 700;
   font-size: 40px;
   line-height: 1.075;
   letter-spacing: 0.3em;
   color: #494848;
-  padding-top: 36px;
   margin-bottom: 12px;
-  text-transform: uppercase;
-}
-@media screen and (min-width: 1024px) {
-  .section_contact_title {
-    font-size: 64px;
-    line-height: 1.078125;
-    margin-bottom: 8px;
-    padding-top: 56px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section_contact_title {
-    margin-bottom: 16px;
-  }
 }
 
-.section_contact_description {
-  font-weight: 600;
+.contacts_description {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-SemiBold.woff), url(../fonts/Montserrat-SemiBold.ttf);
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
   color: #5F5F5F;
   margin-bottom: 24px;
 }
-@media screen and (min-width: 1024px) {
-  .section_contact_description {
-    margin-bottom: 52px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section_contact_description {
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 40px;
-  }
-}
 
-.firstlist_section_contact {
-  display: flex;
-  gap: 22px;
-  margin-bottom: 32px;
-  align-items: baseline;
+.contacts_list {
   list-style: none;
-}
-@media screen and (min-width: 1024px) {
-  .firstlist_section_contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
-  }
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
-.first_item_contact {
+.contacts_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_item_contacts {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Medium.woff), url(../fonts/Montserrat-Medium.ttf);
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -173,103 +151,115 @@ img {
   color: #C79002;
 }
 
-.tel_item_contact_res {
-  width: 144px;
-  height: 40px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.5px solid #F3C653;
-  border-radius: 2px;
-}
-
-.restaurant_phonenumber {
+.link_tel {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.ttf);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2142857143;
   letter-spacing: 0.02em;
-  text-decoration: none;
-  color: rgb(73, 72, 72);
-}
-@media screen and (min-width: 1280px) {
-  .restaurant_phonenumber {
-    color: #828282;
-  }
-}
-
-.secondlist_section_contact {
-  display: flex;
-  gap: 22px;
-  margin-bottom: 32px;
-  align-items: baseline;
-  list-style: none;
-}
-@media screen and (min-width: 1024px) {
-  .secondlist_section_contact {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 48px;
-  }
-}
-
-.second_item_contact {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #C79002;
-}
-
-.tel_item_contact_hot {
-  width: 260px;
-  height: 40px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.5px solid #F3C653;
-  border-radius: 2px;
-}
-
-.hotel_phonenumber {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: rgb(73, 72, 72);
-}
-@media screen and (min-width: 1280px) {
-  .hotel_phonenumber {
-    color: #828282;
-  }
-}
-
-.hotel_phonenumber:not(:last-child) {
-  margin-right: 12px;
-}
-
-.adress_container_contact {
-  max-width: 260px;
-  height: 76px;
-  background-color: #fff;
-  border: 0.5px solid #F3C653;
-  border-radius: 2px;
-  text-align: left;
-}
-
-.section_contact_adress {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
   color: #494848;
   text-decoration: none;
 }
-@media screen and (min-width: 1280px) {
-  .section_contact_adress {
-    color: #828282;
-  }
+
+.link_tel_2 {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.02em;
+  color: #494848;
+  text-decoration: none;
+}
+
+.link_adress {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.02em;
+  color: #494848;
+  text-decoration: none;
+}
+
+.container_tel_contacts {
+  background: #FFFFFF;
+  border: 0.5px solid #F3C653;
+  border-radius: 2px;
+  margin-left: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 8px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}
+
+.container_telhot_contacts {
+  background: #FFFFFF;
+  border: 0.5px solid #F3C653;
+  border-radius: 2px;
+  margin-left: 54px;
+  position: relative;
+}
+
+.hotel_tel_contacts {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  list-style: none;
+  gap: 12px;
+  padding-left: 40px;
+  padding-right: 8px;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}
+
+.contacts_item_adress {
+  max-width: 260px;
+  background: #FFFFFF;
+  border: 0.5px solid #F3C653;
+  border-radius: 2px;
+  margin-left: 124px;
+}
+
+.container_link_contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 44px;
+  padding-right: 33px;
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
+
+.link_adress {
+  font-family: "Montserrat";
+  src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.ttf);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.02em;
+  color: #494848;
+  text-decoration: none;
+  display: block;
+}
+
+.cellphone_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+}
+
+.location_icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
 }/*# sourceMappingURL=index.css.map */
