@@ -23,7 +23,7 @@
     border: 2px solid #FFFFFF;
     border-radius: 25px;
     cursor: pointer;
-    min-width: 236px;
+    width: 236px;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(20/16);
@@ -59,7 +59,7 @@
     @media screen and(min-width: 1024px) {
         font-size: 24px;
         line-height: calc(29/24);
-        min-width: 434px;
+        width: 434px;
         padding: 18px 38px;
     }
 }
@@ -82,20 +82,19 @@
         color: #000000;
     }
 
-    @media screen and(min-width: 1024px) {
-        padding: 18px 117px;
-        font-size: 24px;
-        line-height: calc(29/24);
-    }
+        @media screen and(min-width: 1024px) {
+            padding: 18px 117px;
+            font-size: 24px;
+            line-height: calc(29/24);
+        }
 }
-
 .back-button {
     cursor: pointer;
     background-color: transparent;
     border: none;
     color: #C79002;
     fill: #C79002;
-    min-width: 315px;
+    width: 315px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
@@ -108,14 +107,3 @@
         color: #F3C653;
         fill: transparent;
     }
-
-    @media screen and(min-width: 1024px) {
-        font-size: 20px;
-        line-height: calc(24/20);
-        min-width: 393px;
-    }
-
-    @media screen and(min-width: 1280px) {
-        min-width: 433px;
-    }
-}
