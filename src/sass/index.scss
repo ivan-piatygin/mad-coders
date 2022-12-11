@@ -1,8 +1,13 @@
 // utils
 @import './utils/module';
+@import './utils/fonts';
+@import './utils/is-hidden';
+@import './utils/mixins';
+@import './utils/vars';
 
 // base
 @import './base/module';
+@import './base/reset';
 
 // components
 @import './components/module';
