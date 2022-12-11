@@ -2,12 +2,13 @@
 @import './utils/module';
 @import './utils/fonts';
 @import './utils/is-hidden';
-@import './utils/mixins';
 @import './utils/vars';
+@import './utils/mixins';
 
 // base
 @import './base/module';
 @import './base/reset';
+@import './base/common';
 
 // components
 @import './components/module';

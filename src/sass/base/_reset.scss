@@ -17,6 +17,7 @@ p {
 
 img {
     display: block;
+    width: 100%;
     max-width: 100%;
     height: auto;
 }
@@ -26,12 +27,12 @@ img {
     margin: 0 auto;
     padding: 0 15px;
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 1024px) {
         max-width: 1024px;
         padding: 0 47px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1280px) {
         max-width: 1280px;
         padding: 0 85px;
     }

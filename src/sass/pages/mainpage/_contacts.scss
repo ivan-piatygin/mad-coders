@@ -2,6 +2,11 @@
     background-color: rgba(255, 253, 238, 1);
     padding-top: 36px;
     padding-bottom: 32px;
+    @media screen and (min-width: 1024px){
+        padding-top: 56px;
+        padding-bottom: 44px;
+        position: relative;
+    }
 }
 .contacts_title{
     font-family: 'FilmP3';
@@ -12,8 +17,12 @@
     letter-spacing: 0.3em;
     color: #494848;
     margin-bottom: 12px;
+    @media screen and (min-width: 1024px){
+        font-size: 64px;
+        line-height: calc(69 / 64);
+        margin-bottom: 8px;
+    }
 }
-
 .contacts_description{
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat-SemiBold.woff),
@@ -23,18 +32,32 @@
     letter-spacing: 0.02em;
     color: #5F5F5F;
     margin-bottom: 24px;
+    @media screen and (min-width: 1024px){
+        margin-bottom: 52px;
+    }
 }
 .contacts_list{
     list-style: none;
     display: flex;
-    align-items: baseline;
     flex-wrap: wrap;
     gap: 32px;
+    @media screen and (min-width: 1024px){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: baseline;
+    }
 } 
 .contacts_item{
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 1024px){
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: baseline;
+    }
 }
 .text_item_contacts{
     font-family: 'Montserrat';
@@ -91,6 +114,9 @@
     padding-right: 8px;
     padding-top: 12px;
     padding-bottom: 11px;
+    @media screen and (min-width: 1024px){
+        margin-left: 0;
+    }
 }
 .container_telhot_contacts{
     background: #FFFFFF;
@@ -98,6 +124,9 @@
     border-radius: 2px;
     margin-left: 54px;
     position: relative;
+    @media screen and (min-width: 1024px){
+        margin-left: 0;
+    }
 }
 .hotel_tel_contacts{
     display: flex;
@@ -116,6 +145,10 @@
     border: 0.5px solid #F3C653;
     border-radius: 2px;
     margin-left: 124px;
+    @media screen and (min-width: 1024px){
+        margin-left: 0;
+        max-width: 285px;
+    }
 }
 .container_link_contacts{
     display: flex;
@@ -126,6 +159,10 @@
     padding-right: 33px;
     padding-top: 8px;
     padding-bottom: 7px;
+    @media screen and (min-width: 1024px){
+        padding-top: 9px;
+        padding-right: 8px;
+    }
 }
 .link_adress{
     font-family: 'Montserrat';
@@ -138,6 +175,10 @@
     color: #494848;
     text-decoration: none;
     display: block;
+    @media screen and (min-width: 1024px){
+        font-size: 16px;
+        line-height: calc(20 / 16);
+    }
 }
 .cellphone_icon{
     position: absolute;
@@ -151,3 +192,20 @@
     transform: translateY(-50%);
     left: 14px;
 }
+.wrap_list_map{
+    @media screen and (min-width: 1024px){
+        display: flex;
+    }
+}
+.img_map_contact{
+    position: absolute;
+    top: 0;
+    width: 535px;
+    height: 412px;
+}
+.container_map_contacts{
+    @media screen and (min-width: 1024px){
+        margin-left: 110px;
+    }
+}
+
