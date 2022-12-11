@@ -1,11 +1,11 @@
-<section>
+<section class="hotel-about">
   <div class="container">
-    <h2 class="hotel-about__title">About hotel</h2>
+    <h2 class="is-hidden">About hotel</h2>
     <p class="hotel-about__decription">Amet minim mollit non</p>
-    <h3 class="hotel-about__subtitle">MIMIHO</h3>
-    <ul class="hotel-about__list">
-      <li>
-        <picture>
+    <h3 class="hotel-about__title">MIMIHO</h3>
+    <ul>
+      <li class="hotel-about__list">
+        <picture class="hotel-about__image">
           <source
             width="460"
             media="(min-width:1280px)"
@@ -31,14 +31,14 @@
             src="./images/photo-mob/modern-studio-apartment-mob-1x.jpg"
             alt="Кімната готелю"
         /></picture>
-        <p>
+        <p class="list__description">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
       </li>
-      <li>
-        <picture>
+      <li class="hotel-about__list-second">
+        <picture class="hotel-about__image-second">
           <source
             width="460"
             media="(min-width:1280px)"
@@ -54,7 +54,7 @@
               ./images/photo-tab/hotel-interior-tab-01-2x.jpg 2x
             " />
           <source
-            width="243"
+            width="200"
             media="(min-width:414px)"
             srcset="
               ./images/photo-mob/hotel-interior-mob-01-1x.jpg 1x,
@@ -64,13 +64,16 @@
             src="./images/photo-mob/hotel-interior-mob-01-1x.jpg"
             alt="Кімната готелю"
         /></picture>
-        <p>
+        <p class="list-second__description">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. Velit officia consequat duis enim velit mollit. Exercitation
           veniam consequat sunt nostrud amet.
         </p>
       </li>
     </ul>
-    <div class="slider"></div>
+    <div class="slider">
+      <div class="slider-image"></div>
+      <div class="slider-image"></div>
+    </div>
   </div>
 </section>
