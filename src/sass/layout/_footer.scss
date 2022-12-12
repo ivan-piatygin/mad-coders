@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.logo {
+.footer-logo {
     @extend %logo;
     color: $accent-color;
     @include font(40px, calc(43/40), 700, 0.3em);
