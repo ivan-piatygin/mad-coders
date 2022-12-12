@@ -1,0 +1,27 @@
+// hotel
+@import './hotel/hero';
+@import './hotel/luxe';
+@import './hotel/three-adult';
+@import './hotel/two-adult';
+
+//mainpage
+@import './mainpage/contacts';
+@import './mainpage/hero';
+@import './mainpage/hotel-about';
+@import './mainpage/hotel-details';
+@import './mainpage/restaraunt-about';
+@import './mainpage/restaraunt-details';
+
+// // modal-pages
+// @import './modal-pages/modal-price';
+// @import './modal-pages/modal-room';
+// @import './modal-pages/modal-table';
+
+// restaraunt
+@import './restaraunt/hero';
+@import './restaraunt/kitchen-about';
+@import './restaraunt/menu';
+
+// room
+@import './room/amenities';
+@import './room/hero';
