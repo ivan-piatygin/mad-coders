@@ -37,7 +37,7 @@
     <symbol id="icon-location-icon" viewBox="0 0 32 32">
       <path fill="#f3c653" d="M16 3.214c-4.419 0-8 3.566-8 7.984 0 7.638 8 17.6 8 17.6s8-9.963 8-17.6c0-4.416-3.581-7.984-8-7.984zm0 12.402a4.32 4.32 0 1 1 0-8.64 4.32 4.32 0 0 1 0 8.64z" style="fill:var(--color2, #f3c653)"/>
     </symbol>
-    <symbol id="icon-cil_arrow-right" viewBox="0 0 32 32">
+    <symbol id="arrow-right" viewBox="0 0 32 32">
       <path fill="#c79002" d="M22.492 7.586 21.078 9l6 6H1v2h26.077l-6 6 1.414 1.414L30.905 16l-8.414-8.414z" style="fill:var(--color3, #c79002)"/>
     </symbol>
     <symbol id="icon-instagram" viewBox="0 0 32 32">

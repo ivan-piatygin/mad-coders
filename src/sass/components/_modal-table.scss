@@ -1,0 +1,266 @@
+.overlay {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  overflow-y: scroll;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal {
+  opacity: 0;
+  visibility: hidden;
+
+  width: 100%;
+  max-width: 414px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 30;
+
+  text-align: center;
+  border-radius: 2px;
+  background-color: $light-lemon-background;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: $tablet) {
+  .modal {
+    width: 712px;
+    max-width: 712px;
+    padding: 60px;
+    transform: translate(-50% -50%);
+  }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+}
+
+/* стилі форми */
+
+@media screen and (min-width: $tablet) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    column-gap: 16px;
+  }
+}
+
+.form__title {
+  margin: 0;
+
+  margin-bottom: 40px;
+  font-family: 'TimesNewRoman';
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+
+  letter-spacing: 0.05em;
+  color: $black;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: $tablet) {
+  .form__title {
+    min-width: 534px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 40px;
+    line-height: 1.15;
+  }
+}
+
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: $tablet) {
+  .form__field:nth-of-type(1) {
+    margin-bottom: 0;
+  }
+}
+
+.form__input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 12px;
+
+  font-family: 'TimesNewRoman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+
+  color: $modal-text-color;
+  background-color: transparent;
+  height: 54px;
+  border: 1px solid $brown-text-color;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: $tablet) {
+  .form__input {
+    font-size: 24px;
+    line-height: 1.17;
+    width: 288px;
+  }
+}
+
+.form__select {
+  width: 100%;
+  margin-bottom: 8px;
+  padding-left: 12px;
+  height: 54px;
+
+  font-family: 'TimesNewRoman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+
+  color: $modal-text-color;
+  background-color: transparent;
+  border: 1px solid $brown-text-color;
+  border-radius: 2px;
+  cursor: pointer;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+@media screen and (min-width: $tablet) {
+  .form__select {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.select-wrap {
+  position: relative;
+}
+
+@media screen and (min-width: $tablet) {
+  .select-wrap {
+    width: 288px;
+  }
+}
+
+.select-wrap::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 15px;
+  right: 15px;
+
+  background-image: url(../images/ep-arrow-down-bold.svg);
+  width: 24px;
+  height: 24px;
+
+  pointer-events: none;
+}
+
+.form__label {
+  margin-left: 12px;
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.02em;
+  color: $brown-text-color;
+  text-align: left;
+}
+
+.form__label:nth-child(4) {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: $tablet) {
+  .form__label {
+    margin-bottom: 28px;
+  }
+}
+
+.form-btn {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+
+  background-color: $black;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: $white;
+  border: 1px solid $accent-color;
+  border-radius: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $black;
+  }
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: $mobile) {
+  .form-btn {
+    min-width: 384px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .form-btn {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    min-width: 592px;
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
