@@ -60,6 +60,20 @@
   pointer-events: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+}
+
 body {
   font-family: "Montserrat", "sans-serif";
 }
@@ -106,12 +120,12 @@ img {
   background-color: rgb(255, 253, 238);
   padding-top: 36px;
   padding-bottom: 32px;
+  position: relative;
 }
 @media screen and (min-width: 1024px) {
   .section_contacts {
     padding-top: 56px;
     padding-bottom: 44px;
-    position: relative;
   }
 }
 
@@ -132,10 +146,16 @@ img {
     margin-bottom: 8px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .contacts_title {
+    color: #828282;
+  }
+}
 
 .contacts_description {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-SemiBold.woff), url(../fonts/Montserrat-SemiBold.ttf);
+  font-weight: 600;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.02em;
@@ -145,6 +165,14 @@ img {
 @media screen and (min-width: 1024px) {
   .contacts_description {
     margin-bottom: 52px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contacts_description {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 1.2;
+    color: #5F5F5F;
   }
 }
 
@@ -160,6 +188,7 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: baseline;
+    gap: 24px;
   }
 }
 
@@ -174,6 +203,7 @@ img {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: baseline;
+    gap: 8px;
   }
 }
 
@@ -197,6 +227,11 @@ img {
   color: #494848;
   text-decoration: none;
 }
+@media screen and (min-width: 1280px) {
+  .link_tel {
+    color: #828282;
+  }
+}
 
 .link_tel_2 {
   font-family: "Montserrat";
@@ -208,16 +243,26 @@ img {
   color: #494848;
   text-decoration: none;
 }
+@media screen and (min-width: 1280px) {
+  .link_tel_2 {
+    color: #828282;
+  }
+}
 
 .link_adress {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat-Regular.woff), url(../fonts/Montserrat-Regular.ttf);
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.2142857143;
-  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
   color: #494848;
   text-decoration: none;
+}
+@media screen and (min-width: 1280px) {
+  .link_adress {
+    color: #828282;
+  }
 }
 
 .container_tel_contacts {
@@ -276,6 +321,7 @@ img {
   .contacts_item_adress {
     margin-left: 0;
     max-width: 285px;
+    margin-top: 48px;
   }
 }
 
@@ -311,6 +357,7 @@ img {
   .link_adress {
     font-size: 16px;
     line-height: 1.25;
+    color: #828282;
   }
 }
 
@@ -328,21 +375,48 @@ img {
   left: 14px;
 }
 
-@media screen and (min-width: 1024px) {
-  .wrap_list_map {
-    display: flex;
+.img_map_contact {
+  width: 100%;
+  height: 220px;
+  background-image: url(../images/photo-mob/map-mob-1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .img_map_contact {
+    background-image: url(../images/photo-mob/map-mob-2x.jpg);
   }
 }
-
-.img_map_contact {
-  position: absolute;
-  top: 0;
-  width: 535px;
-  height: 412px;
-}
-
 @media screen and (min-width: 1024px) {
-  .container_map_contacts {
-    margin-left: 110px;
+  .img_map_contact {
+    position: absolute;
+    top: 64px;
+    right: 47px;
+    max-width: 535px;
+    height: 412px;
+    background-image: url(../images/photo-tab/map-tab1-x.jpg);
+  }
+}
+@media screen and (min-width: 1024px) and (min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1024px) and (min-resolution: 192dpi), screen and (min-width: 1024px) and (min-resolution: 2dppx) {
+  .img_map_contact {
+    background-image: url(../images/photo-tab/map-tab-2x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .img_map_contact {
+    position: absolute;
+    top: 64px;
+    right: 85px;
+    width: 634px;
+    height: 412px;
+    background-image: url(../images/photo-desk/map-1x.jpg);
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .img_map_contact {
+    background-image: url(../images/photo-desk/map-2x.jpg);
   }
 }/*# sourceMappingURL=index.css.map */
