@@ -1,31 +1,34 @@
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+// .container {
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin: 0 auto;
   
-    @media screen and (min-width: 415px) {
-        width: 415px;            
-    }
-    @media screen and (min-width: 1024px) {
-        width: 1024px;            
-    }
-    @media screen and (min-width: 1280px) {
-        width: 1280px;            
-    }
-}
+//     @media screen and (min-width: 415px) {
+//         width: 415px;            
+//     }
+//     @media screen and (min-width: 1024px) {
+//         width: 1024px;            
+//     }
+//     @media screen and (min-width: 1280px) {
+//         width: 1280px;            
+//     }
+// }
 
 // ----прозорий контейнер для позиціонування хедеру
 .relative__body{
-    background-color:  #0E0C07;
-    position: relative;
+    background-color: rgba(7, 2, 2, 0.822);
+    // position: relative;
     display: flex;
-    justify-content: center;
-    height: 300px;
+    // justify-content: center;
+    height: 740px; 
+    padding-top: 16px;
 }
 .header__body{
     display: flex;
-   
-    position: absolute;
+   width: 100%;
+    // position: absolute;
+    justify-content: space-between;
+    align-items: baseline;
 }
 .nav__list{
 display: flex;
@@ -33,14 +36,15 @@ align-items: center;
 }
 .header__logo{
 display: flex;
-margin-right: auto;
+// margin-right: auto;
 font-family: 'Film P3';
-font-style: normal;
+// font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.08;
 letter-spacing: 0.3em;
 color: #FFFFFF;
+text-decoration: none;
 @media (min-width: 1024px) {
     font-size: 40px;
     line-height: 1.07;
