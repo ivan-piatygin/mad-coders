@@ -5,11 +5,7 @@
     padding-right: 32px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url('../images/photo-mob/hotel-homepage-collage-mob-01-1x (1).jpg');
-    // margin-left: auto;
-    // margin-right: auto;
-    // display: block;
     background-repeat: no-repeat;
-
     background-size: cover;
     background-position: center;
     max-width: 100%;
@@ -25,6 +21,7 @@
         padding-bottom: 96px;
         padding-left: unset;
         padding-right: unset;
+        height: 620px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
             url('../images/photo-tab/hotel-homepage-collage-tab-01-1x (1).jpg');
 
@@ -54,21 +51,16 @@
 }
 
 .titles-container {
-    // justify-content: center;
-    // width: 100%;
-    // padding-left: 143px;
-    // padding-right: 144px;
     display: block;
     width: 190px;
     margin: 0 auto;
-
 
     @include tablet {
         width: 549px;
     }
 }
 
-.primary-section-title {
+.logo-mainpage {
     font-family: 'Film P3';
     font-style: normal;
     font-weight: 700;
