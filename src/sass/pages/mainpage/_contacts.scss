@@ -198,7 +198,7 @@
     color: #494848;
     text-decoration: none;
     display: block;
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1280px){
         font-size: 16px;
         line-height: calc(20 / 16);
         color: #828282;
@@ -236,12 +236,12 @@
         right: 47px;
         max-width: 535px;
         height: 412px;
-        background-image: url(../images/photo-tab/map-tab1-x.jpg);
+        background-image: url(../images/photo-tab/map-tab-1x.jpg);
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx){
-                background-image: url(../images/photo-tab/map-tab-2x.jpg);}
-            
+                background-image: url(../images/photo-tab/map-tab-2x.jpg);
+            }       
     }
     @media screen and (min-width: 1280px){
         position: absolute;
