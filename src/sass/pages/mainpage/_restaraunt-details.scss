@@ -7,8 +7,7 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        background: rgba(0, 0, 0, 0.65);
-        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/photo-mob/restorant-homepage-collage-mob-1x.jpg');
+        background-image: linear-gradient(to bottom, $details-background, $details-background), url('../images/photo-mob/restorant-homepage-collage-mob-1x.jpg');
     
         @media screen and(min-width: $tablet) {
             padding-top: 48px;
@@ -17,21 +16,21 @@
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/photo-mob/restorant-homepage-collage-mob-2x.jpg');
+            background-image: linear-gradient(to bottom, $details-background, $details-background), url('../images/photo-mob/restorant-homepage-collage-mob-2x.jpg');
         }
 
             @media screen and (min-width: $tablet) {
-                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/photo-tab/restorant-homepage-collage-tab-1x.jpg');
+                background-image: linear-gradient(to bottom, $details-background, $details-background), url('../images/photo-tab/restorant-homepage-collage-tab-1x.jpg');
         
                 @media screen and (min-device-pixel-ratio: 2),
                 screen and (min-resolution: 192dpi),
                 screen and (min-resolution: 2dppx) {
-                    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),  url('../images/photo-tab/restorant-homepage-collage-tab-2x.jpg');
+                    background-image: linear-gradient(to bottom, $details-background, $details-background),  url('../images/photo-tab/restorant-homepage-collage-tab-2x.jpg');
                 }
             }
 
         @media screen and (min-width: $desktop) {
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/photo-desk/restorant-homepage-collage-desk-1x.jpg');
+            background-image: linear-gradient(to bottom, $details-background, $details-background), url('../images/photo-desk/restorant-homepage-collage-desk-1x.jpg');
                 
             @media screen and (min-device-pixel-ratio: 2),
             screen and (min-resolution: 192dpi),
