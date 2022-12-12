@@ -167,10 +167,12 @@
     border: 0.5px solid #F3C653;
     border-radius: 2px;
     margin-left: 124px;
+    margin-bottom: 32px;
     @media screen and (min-width: 1024px){
         margin-left: 0;
+        margin-bottom: 0;
         max-width: 285px;
-        margin-top: 48px;
+        margin-top: 24px;
     }
 }
 .container_link_contacts{
