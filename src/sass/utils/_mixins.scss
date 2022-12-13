@@ -43,6 +43,15 @@
 }
 
 // для калькуляції сітки
+@mixin retina3x {
+@media (min-device-pixel-ratio: 3),
+  (min-resolution: 288dpi),
+  (min-resolution: 3dppx) {
+    @content;
+  }
+}
+
+// калькуляція сіток
 @mixin calc($count, $gap) {
   width: calc((100% - $gap * ($count - 1)) / $count);
 }
