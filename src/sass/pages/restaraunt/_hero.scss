@@ -1,0 +1,63 @@
+.hero--rest {
+  background-image: linear-gradient(
+      to bottom,
+      $hero-background,
+      $hero-background
+    ),
+    url('../images/photo-mob/restoran-mob-1x.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to bottom,
+        $hero-background,
+        $hero-background
+      ),
+      url('../images/photo-mob/restoran-mob-2x.jpg');
+  }
+
+  @media screen and (min-width: $tablet) {
+
+    height: 720px;
+
+    background-image: linear-gradient(
+        to bottom,
+        $hero-background,
+        $hero-background
+      ),
+      url('../images/photo-tab/homepage-hotel-tab-1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          $hero-background,
+          $hero-background
+        ),
+        url('../images/photo-tab/homepage-hotel-tab-2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        to bottom,
+        $hero-background,
+        $hero-background
+      ),
+      url('../images/photo-desk/restoran-desk-1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../images/photo-desk/restoran-desk-2x.jpg');
+    }
+  }
+}
+

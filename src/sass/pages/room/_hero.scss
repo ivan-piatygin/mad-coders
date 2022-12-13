@@ -1,0 +1,37 @@
+.hero--room {
+  background-image: 
+    url('../images/photo-mob/main-room-double-mob-1x.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: 
+      url('../images/photo-mob/main-room-double-mob-2x.jpg');
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: 
+      url('../images/photo-tab/main-room-double-tab-1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url('../images/photo-tab/main-room-double-tab-1x.jpg');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: 
+      url('../images/photo-desk/main-room-double-desk-1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url('../images/photo-desk/main-room-double-desk-1x.jpg');
+    }
+  }
+}
+
+
