@@ -1,0 +1,133 @@
+.restaraunt-details{
+    padding-top: 24px;
+    max-width: 1600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: linear-gradient(to bottom, $details-background, $details-background), url('../images/photo-mob/restorant-homepage-collage-mob-1x.jpg');
+    
+        @media screen and(min-width: $tablet) {
+            padding-top: 48px;
+        }
+    
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: linear-gradient(to bottom, $details-background, $details-background), url('../images/photo-mob/restorant-homepage-collage-mob-2x.jpg');
+        }
+
+            @media screen and (min-width: $tablet) {
+                background-image: linear-gradient(to bottom, $details-background, $details-background), url('../images/photo-tab/restorant-homepage-collage-tab-1x.jpg');
+        
+                @media screen and (min-device-pixel-ratio: 2),
+                screen and (min-resolution: 192dpi),
+                screen and (min-resolution: 2dppx) {
+                    background-image: linear-gradient(to bottom, $details-background, $details-background),  url('../images/photo-tab/restorant-homepage-collage-tab-2x.jpg');
+                }
+            }
+
+        @media screen and (min-width: $desktop) {
+            background-image: linear-gradient(to bottom, $details-background, $details-background), url('../images/photo-desk/restorant-homepage-collage-desk-1x.jpg');
+                
+            @media screen and (min-device-pixel-ratio: 2),
+            screen and (min-resolution: 192dpi),
+            screen and (min-resolution: 2dppx) {
+                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('../images/photo-desk/restorant-homepage-collage-desk-2x.jpg');
+            }
+        }
+                
+        @media screen and (min-width: $desktop) {
+            max-width: 1600px;
+        }
+}
+.reastaraunt-details__position{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 125px;
+
+    @media screen and(min-width: $tablet) {
+            margin-left: 231px;
+        }
+
+    @media screen and(min-width: $desktop) {
+        margin-left: 338px;
+    }
+}
+
+.restoraunt-details__logo{
+    font-family: $film-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: calc(43/40);
+    letter-spacing: 0.3em;
+    color: $white;
+    padding-bottom: 12px;
+
+    @media screen and(min-width: $tablet) {
+        padding-bottom: 16px;
+        font-size: 64px;
+        line-height: calc(69/64);
+    }
+}
+
+.restoraunt-details__title{
+    font-family: $montserrat-font;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24/20);
+    letter-spacing: 0.02em;
+    color: $white;
+    padding-bottom: 20px;
+
+    @media screen and(min-width: $tablet) {
+        padding-bottom: 8px;
+        font-size: 24px;
+        line-height: calc(29/24);
+    }
+}
+
+.restoraunt-details__description{
+    font-family: $montserrat-font;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: calc(15/12);
+    letter-spacing: 0.02em;
+    color: $third-text-color;
+    padding-bottom: 48px;
+
+    @media screen and(min-width: $tablet) {
+        width: 610px;
+        padding-bottom: 40px;
+        font-size: 16px;
+        line-height: calc(20/16);
+    }
+}
+
+
+.button-position{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and(min-width: $tablet) {
+        margin-right: auto;
+    }
+}
+
+.slider-position{
+    padding-bottom: 40px;
+        flex-direction: column-reverse;
+
+    @media screen and(min-width: $tablet) {
+        display: flex;
+        flex-direction: row-reverse;
+            justify-content: center;
+    }
+}
