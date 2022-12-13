@@ -17,17 +17,17 @@
 // ----прозорий контейнер для позиціонування хедеру
 .relative__body {
   background-color: rgba(7, 2, 2, 0.822);
-  // position: relative;
+  position: relative;
   display: flex;
-  // justify-content: center;
+  justify-content: center;
   height: 740px;
   padding-top: 16px;
 }
 .header__body {
   display: flex;
-  width: 100%;
-  // position: absolute;
-  justify-content: space-between;
+  // width: 100%;
+  position: absolute;
+  // justify-content: space-between;
   align-items: baseline;
 }
 .nav__list {
@@ -37,7 +37,7 @@
 .header__logo {
   display: flex;
   // margin-right: auto;
-  font-family: 'Film P3';
+  font-family: 'FilmP3';
   // font-style: normal;
   font-weight: 700;
   font-size: 36px;
