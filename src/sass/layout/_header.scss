@@ -2,162 +2,165 @@
 //     padding-left: 15px;
 //     padding-right: 15px;
 //     margin: 0 auto;
-  
+
 //     @media screen and (min-width: 415px) {
-//         width: 415px;            
+//         width: 415px;
 //     }
 //     @media screen and (min-width: 1024px) {
-//         width: 1024px;            
+//         width: 1024px;
 //     }
 //     @media screen and (min-width: 1280px) {
-//         width: 1280px;            
+//         width: 1280px;
 //     }
 // }
 
 // ----прозорий контейнер для позиціонування хедеру
-.relative__body{
-    background-color: rgba(7, 2, 2, 0.822);
-    // position: relative;
-    display: flex;
-    // justify-content: center;
-    height: 740px; 
-    padding-top: 16px;
+.relative__body {
+  background-color: rgba(7, 2, 2, 0.822);
+  // position: relative;
+  display: flex;
+  // justify-content: center;
+  height: 740px;
+  padding-top: 16px;
 }
-.header__body{
-    display: flex;
-   width: 100%;
-    // position: absolute;
-    justify-content: space-between;
-    align-items: baseline;
+.header__body {
+  display: flex;
+  width: 100%;
+  // position: absolute;
+  justify-content: space-between;
+  align-items: baseline;
 }
-.nav__list{
-display: flex;
-align-items: center;
+.nav__list {
+  display: flex;
+  align-items: center;
 }
-.header__logo{
-display: flex;
-// margin-right: auto;
-font-family: 'Film P3';
-// font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 1.08;
-letter-spacing: 0.3em;
-color: #FFFFFF;
-text-decoration: none;
-@media (min-width: 1024px) {
+.header__logo {
+  display: flex;
+  // margin-right: auto;
+  font-family: 'Film P3';
+  // font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.08;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  text-decoration: none;
+  @media (min-width: 1024px) {
     font-size: 40px;
     line-height: 1.07;
     margin-left: 32px;
-    margin-right: 87px; 
+    margin-right: 87px;
+  }
+  @media (min-width: 1280px) {
+    margin-left: 70px;
+    margin-right: 96px;
+  }
 }
-@media (min-width: 1280px) {
-    margin-left: 70px;    
-    margin-right: 96px; 
+.header__logo > .header__link {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media (min-width: 1024px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
+.header__item > .header__link {
+  padding-top: 28px;
+  padding-bottom: 28px;
+  @media (min-width: 1024px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
-.header__logo > .header__link{
-    padding-top: 16px;
-    padding-bottom: 16px;
-    @media (min-width: 1024px) {
-        padding-top: 24px;
-        padding-bottom: 24px; 
-    }
-}
-.header__item > .header__link{
-    padding-top: 28px;
-    padding-bottom: 28px;
-    @media (min-width: 1024px) {
-        padding-top: 30px;
-        padding-bottom: 30px; 
-    }
-}
-.header__item{
-display: flex;
-align-self: center;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.25;
-letter-spacing: 0.02em;
-color: #F3C653;
-&:nth-child(3){
+.header__item {
+  display: flex;
+  align-self: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: #f3c653;
+  &:nth-child(3) {
     margin-left: 20px;
-}
-@media (min-width: 1024px) {
+  }
+  @media (min-width: 1024px) {
     position: relative;
     font-size: 20px;
     line-height: 1.2;
-&:nth-child(2)::before{
-content: "";
-position: absolute;
-width: 144px;
-height: 40px;
-left:30px;
-top: -8px;
-border: 1px solid rgba(243, 198, 83, 0.7);
-border-radius: 2px;
-}    
-&:nth-child(4)::before{
-    content: "";
-    position: absolute;
-    width: 264px;
-    height: 40px;
-    left:30px;
-    top: -8px;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
-    }    
-&:nth-child(3){
-    margin-left: 80px;
-}
-}
-}
-.header__item .header__link__phone{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.2;
-letter-spacing: 0.02em;
-color: #FFFFFF;
-}
-.header__link__phone{
-    display: none;
-    @media (min-width: 1024px) {
-        display: flex;
-        align-self: center;
-        color: #FFFFFF;
-        margin-left: 8px;
-        &:nth-child(3){
-            margin-left: 16px;
-        }
+    &:nth-child(2)::before {
+      content: '';
+      position: absolute;
+      width: 144px;
+      height: 40px;
+      left: 30px;
+      top: -8px;
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
     }
-}
-.header__icon {
-    display: inline-block;
-    margin-left: 6px;
-    stroke-width: 0;
-    stroke: #F3C653;
-    fill: #F3C653;
-    @media (min-width: 1024px){
-        margin-left: 40px;
+    &:nth-child(4)::before {
+      content: '';
+      position: absolute;
+      width: 264px;
+      height: 40px;
+      left: 30px;
+      top: -8px;
+      border: 1px solid rgba(243, 198, 83, 0.7);
+      border-radius: 2px;
     }
-}
-.header__socials{
-  display: none;
-  @media (min-width: 1280px) {
-      display: flex;
-      align-items: center;
-      margin-left: auto;
-      margin-right: 70px;
+    &:nth-child(3) {
+      margin-left: 80px;
+    }
   }
 }
-.socials__list{
+.header__item .header__link__phone {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.header__link__phone {
+  display: none;
+  @media (min-width: 1024px) {
+    display: flex;
+    align-self: center;
+    color: #ffffff;
+    margin-left: 8px;
+    &:nth-child(3) {
+      margin-left: 16px;
+    }
+  }
+}
+.header__icon {
+  display: inline-block;
+  margin-left: 6px;
+  stroke-width: 0;
+  stroke: #f3c653;
+  fill: #f3c653;
+  @media (min-width: 1024px) {
+    margin-left: 40px;
+  }
+}
+.header__socials {
+  display: none;
+  @media (min-width: 1280px) {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 70px;
+  }
+}
+.socials__list {
   display: flex;
   gap: 20px;
 }
-.socials__icon{
-  fill: #F3C653;
+.socials__icon {
+  fill: #f3c653;
   opacity: 0.7;
 }
 
+.header__list {
+  background-color: aquamarine;
+}
