@@ -1,0 +1,231 @@
+.hero {
+  position: relative;
+  margin: auto;
+  max-width: 414px;
+  height: 740px;
+  padding-top: 181px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      to bottom,
+      $details-background,
+      $details-background
+    ),
+    url('../images/photo-mob/homepage-mob-1x.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to bottom,
+        $details-background,
+        $details-background
+      ),
+      url('../images/photo-mob/homepage-mob-2x.jpg');
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        to bottom,
+        $details-background,
+        $details-background
+      ),
+      url('../images/photo-tab/homepage-hotel-tab-1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          $details-background,
+          $details-background
+        ),
+        url('../images/photo-tab/homepage-hotel-tab-2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        to bottom,
+        $details-background,
+        $details-background
+      ),
+      url('../images/photo-desk/homepage-desk-1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url('../images/photo-desk/homepage-desk-2x.jpg');
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .hero {
+    max-width: 1024px;
+    height: 720px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 164px;
+    padding-bottom: 65px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+}
+
+.hero__title {
+  font-family: $film-font;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  letter-spacing: 0.3em;
+  color: #ffffff;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__title {
+    margin-bottom: 16px;
+    font-size: 128px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__title {
+    margin-bottom: 32px;
+  }
+}
+
+.hero__pre-title {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: $montserrat-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__pre-title {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero__pre-title {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__text {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 113px;
+
+  font-family: $times-font;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__text {
+    margin-bottom: 137px;
+  }
+}
+
+.hero__address {
+  width: 210px;
+  height: 47px;
+  /* padding: 5px; */
+
+  position: absolute;
+
+  border: 1px solid rgba(243, 198, 83, 0.7);
+  border-radius: 2px;
+}
+
+@media screen and (min-width: 414px) and (max-width: 1023px) {
+  .hero__address {
+    top: 64px;
+    right: 15px;
+    width: 210px;
+    height: 47px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__address {
+    bottom: 64px;
+    left: 47px;
+    width: 285px;
+    height: 56px;
+  }
+}
+
+.hero__address-link {
+  font-family: $montserrat-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #e5e5e5;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero__address-link {
+    font-size: 16px;
+  }
+}
+
+.hero_address-img {
+  width: 12px;
+  height: 19px;
+  color: rgba(243, 198, 83, 0.7);
+  display: inline-block;
+}
+
+.hero__action {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .button__list {
+    display: flex;
+    flex-direction: unset;
+    gap: 24px;
+    position: absolute;
+    right: 47px;
+  }
+}
