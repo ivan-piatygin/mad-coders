@@ -40,7 +40,7 @@
         }
                 
         @media screen and (min-width: $desktop) {
-            max-width: 1600px;
+            max-width: 100%;
         }
 }
 .reastaraunt-details__position{
@@ -127,7 +127,112 @@
 
     @media screen and(min-width: $tablet) {
         display: flex;
+        min-width: 0;
         flex-direction: row-reverse;
             justify-content: center;
+            padding-bottom: 96px;
+            align-items: flex-end;
     }
+}
+
+
+// Слайдер
+
+.tripple-slider{
+    min-width: 0;
+    @media screen and(max-width: $tablet) {
+        padding-bottom: 80px;
+        }
+    
+
+    @media screen and(min-width: $mobile) {
+        max-width: 370px;
+        
+        
+    }
+
+    @media screen and(min-width: $tablet) {
+        max-width: 660px;
+        
+    }
+
+    @media screen and(min-width: $desktop) {
+        max-width: 723px;
+        height: 270px;
+    }
+}
+.slick-track {
+    display: flex;
+    align-items: flex-start;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-arrow{
+position: absolute;
+
+font-size: 0;
+z-index: 10;
+width: 30px;
+height: 17px;
+
+@media screen and(min-width:$mobile) {
+        top: 509px;
+    }
+@media screen and(min-width:$tablet) {
+        top: 504px;
+    }
+@media screen and(min-width:$desktop) {
+    top: 504px;
+}
+
+
+}
+
+.slick-arrow.slick-next{
+    
+    border: none;
+    background-color: transparent;
+    background-position: center;
+    background-image: url(../images/Vectorright.svg);
+
+    @media screen and(min-width:$mobile) {
+        right: 280px;
+    }
+
+    @media screen and(min-width: $tablet) {
+            right: 609px;
+        }
+
+    @media screen and(min-width: $desktop) {
+        right: 711px;
+    }
+}
+
+.slick-arrow.slick-prev{
+    
+    border: none;
+    background-color: transparent;
+    
+    background-image: url(../images/Vectorleft.svg);
+
+    @media screen and(min-width:$mobile) {
+            left: 15px;
+        }
+
+    @media screen and(min-width: $tablet) {
+            left: 320px;
+        }
+
+    @media screen and(min-width: $desktop) {
+            left: 475px;
+        }
+}
+
+.slick-slide{
+    width: auto;
+    margin-right: 15px;
+    margin-left: 15px;
 }
