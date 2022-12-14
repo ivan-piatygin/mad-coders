@@ -1,12 +1,8 @@
 // hotel
-@import './hotel/hero';
-@import './hotel/luxe';
-@import './hotel/three-adult';
-@import './hotel/two-adult';
+@import './hotel/hotel';
 
 //mainpage
 @import './mainpage/contacts';
-@import './mainpage/hero';
 @import './mainpage/hotel-about';
 @import './mainpage/hotel-details';
 @import './mainpage/restaraunt-about';
@@ -18,10 +14,8 @@
 // @import './modal-pages/modal-table';
 
 // restaraunt
-@import './restaraunt/hero';
 @import './restaraunt/kitchen-about';
 @import './restaraunt/menu';
 
 // room
 @import './room/amenities';
-@import './room/hero';

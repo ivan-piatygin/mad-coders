@@ -75,6 +75,7 @@
     display: inline-block;
     color: $accent-color;
     @include font(20px, calc(24 / 20), 500, 0.02em);
+    &:hover,&:focus{color: white;}
 }
 
 .footer-navigation__link:last-child {
@@ -100,12 +101,15 @@
         border: 0.5px solid $accent-color;
         border-radius: 2px;
         width: 144px;
-
+&:hover,&:focus{background-color: $white;}
         &:not(:last-child) {
             margin-bottom: 12px;
         }
     }
-
+&:hover .social__name,
+&:focus .social__name{
+    color: black;
+}
 }
 .social__name {
     display: none;
@@ -116,6 +120,10 @@
         @include font(16px, calc(20/16), 400, 00.02em);
         color: $accent-color;
     }
+        &:hover,
+        &:focus {
+            color: $black;
+        }
 }
 
 .social__icon {
@@ -126,4 +134,8 @@
     @include tablet {
 opacity: 1;
     }
+         &:hover,
+         &:focus {
+             fill: $black;
+         }
 }
