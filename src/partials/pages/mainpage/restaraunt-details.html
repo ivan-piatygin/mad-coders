@@ -1,7 +1,11 @@
 <section class="restaraunt-details">
   <div class="container">
-    <div class="reastaraunt-details__position">
-      <p class="restoraunt-details__logo">MIMIHO</p>
+    <div
+      class="reastaraunt-details__position reastaraunt-details__position--mobile"
+    >
+      <p class="restoraunt-details__logo">
+        <span class="restoraunt-details--span">MIMIHO</span>
+      </p>
       <h2 class="restoraunt-details__title">Ресторан</h2>
       <p class="restoraunt-details__description">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
@@ -9,7 +13,108 @@
       </p>
     </div>
     <div class="slider-position">
-      <div class="slider"></div>
+      <div class="tripple-slider">
+        <div>
+          <picture class="">
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/photo-desk/restorant-homepage-collage-01-1x.jpg 1x,
+                ./images/photo-desk/restorant-homepage-collage-01-2x.jpg 2x
+              " />
+            <source
+              media="(min-width:1024px)"
+              srcset="
+                ./images/photo-tab/restorant-homepage-collage-tab-01-1x.jpg 1x,
+                ./images/photo-tab/restorant-homepage-collage-tab-01-2x.jpg 2x
+              " />
+            <source
+              media="(min-width:414px)"
+              srcset="
+                ./images/photo-mob/restorant-homepage-collage-mob-01-1x.jpg 1x,
+                ./images/photo-mob/restorant-homepage-collage-mo-01-2x.jpg  2x
+              " />
+            <img
+              src="./images/photo-mob/restorant-homepage-collage-mob-01-1x.jpg"
+              alt="Їжа"
+          /></picture>
+        </div>
+        <div>
+          <picture class="">
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/photo-desk/restorant-homepage-collage-02-1x.jpg 1x,
+                ./images/photo-desk/restorant-homepage-collage-02-2x.jpg 2x
+              " />
+            <source
+              media="(min-width:1024px)"
+              srcset="
+                ./images/photo-tab/restorant-homepage-collage-tab-02-1x.jpg 1x,
+                ./images/photo-tab/restorant-homepage-collage-tab-02-2x.jpg 2x
+              " />
+            <source
+              media="(min-width:414px)"
+              srcset="
+                ./images/photo-tab/restorant-homepage-collage-tab-02-1x.jpg 1x,
+                ./images/photo-tab/restorant-homepage-collage-tab-02-2x.jpg 2x
+              " />
+            <img
+              src="./images/photo-desk/restorant-homepage-collage-02-1x.jpg"
+              alt="Їжа"
+          /></picture>
+        </div>
+        <div>
+          <picture class="">
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/photo-desk/restorant-homepage-collage-03-1x.jpg 1x,
+                ./images/photo-desk/restorant-homepage-collage-03-2x.jpg 2x
+              " />
+            <source
+              media="(min-width:1024px)"
+              srcset="
+                ./images/photo-tab/restorant-homepage-collage-tab-03-1x.jpg 1x,
+                ./images/photo-tab/restorant-homepage-collage-tab-03-2x.jpg 2x
+              " />
+            <source
+              media="(min-width:414px)"
+              srcset="
+                ./images/photo-tab/restorant-homepage-collage-tab-03-1x.jpg 1x,
+                ./images/photo-tab/restorant-homepage-collage-tab-03-2x.jpg 2x
+              " />
+            <img
+              src="./images/photo-desk/restorant-homepage-collage-03-1x.jpg"
+              alt="Їжа"
+          /></picture>
+        </div>
+        <div>
+          <picture class="">
+            <source
+              media="(min-width:1280px)"
+              srcset="
+                ./images/photo-mob/pexels-oruri-jacome-mob-1x.jpg 1x,
+                ./images/photo-mob/pexels-oruri-jacome-mob-2x.jpg 2x
+              " />
+            <source
+              media="(min-width:1024px)"
+              srcset="
+                ./images/photo-mob/pexels-oruri-jacome-mob-1x.jpg 1x,
+                ./images/photo-mob/pexels-oruri-jacome-mob-2x.jpg 2x
+              " />
+            <source
+              media="(min-width:414px)"
+              srcset="
+                ./images/photo-mob/pexels-oruri-jacome-mob-1x.jpg 1x,
+                ./images/photo-mob/pexels-oruri-jacome-mob-2x.jpg 2x
+              " />
+            <img
+              src="./images/photo-mob/pexels-oruri-jacome-mob-1x.jpg"
+              alt="Їжа"
+          /></picture>
+        </div>
+      </div>
       <div class="button-position">
         <button
           class="hero-homepage__button js-open-modal"
