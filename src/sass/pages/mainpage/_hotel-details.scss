@@ -1,8 +1,8 @@
 .section.hotel-reservation {
   padding-top: 24px;
-  padding-bottom: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  // padding-bottom: 40px;
+  // padding-left: 32px;
+  // padding-right: 32px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url('../images/photo-mob/hotel-homepage-collage-mob-01-1x.jpg');
   background-repeat: no-repeat;
@@ -46,18 +46,26 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
 }
 
-.titles-container {
-  display: block;
-  width: 190px;
-  margin: 0 auto;
-
-  @include tablet {
-    width: 549px;
+.top-hotel-reservation{
+  margin-bottom: 20px;
+  @include tablet{
+    margin-bottom: 40px;
   }
 }
+
+// .titles-container {
+//   // display: block;
+//   // width: 200px;
+//   // margin: 0 auto;
+//   padding-right: 140px;
+
+//   @include tablet {
+//     width: 549px;
+//   }
+// }
 
 .logo-mainpage {
   font-family: 'FilmP3';
@@ -67,7 +75,8 @@
   line-height: calc(43 / 40);
   letter-spacing: 0.3em;
   color: #ffffff;
-  text-align: right;
+  // text-align: right;
+  padding-right: 140px;
 
   @include tablet {
     font-size: 64px;
@@ -84,6 +93,7 @@
   text-align: right;
   margin-top: 12px;
   margin-bottom: 20px;
+  padding-right: 144px;
 
   @include tablet {
     font-size: 24px;
