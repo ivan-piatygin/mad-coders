@@ -50,6 +50,8 @@ font-style: normal;
 font-weight: 500;
 font-size: 14px;
 line-height: calc(17/14);
+
+padding-top: 8px;
 }
 
 .ingridients{
@@ -85,11 +87,20 @@ line-height: calc(17/14);
     text-align: center;
 }
 
-.dish_description{
-    padding-top: 4px;
-    padding-bottom: 8px;
-}
 
 .desert, .drink{
     width: 220px;
+}
+
+.menu_button{
+
+    margin-top: 32px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dish_description {
+    padding-top: 4px;
 }
