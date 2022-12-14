@@ -36,6 +36,7 @@
 
 
 .hero--room__title {
+    margin-top: 300px;
 margin-bottom: 14px;
 font-family: $times-font;
 font-weight: 700;
@@ -63,4 +64,14 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .hero-homepage__button--room {
+    position: absolute;
+    right: 47px;
+    bottom: 64px;
+}
 }
