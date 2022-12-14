@@ -35,3 +35,32 @@
 }
 
 
+.hero--room__title {
+margin-bottom: 14px;
+font-family: $times-font;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.2;
+letter-spacing: 0.05em;
+color: #ffff;
+}
+
+.hero--room__text {
+    margin-bottom: 30px;
+  font-family: $montserrat-font;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+}
+
+.hero--room__about {
+    width: 325px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
