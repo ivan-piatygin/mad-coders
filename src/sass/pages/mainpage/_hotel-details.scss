@@ -4,7 +4,7 @@
     padding-left: 32px;
     padding-right: 32px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('../images/photo-mob/hotel-homepage-collage-mob-01-1x (1).jpg');
+        url('../images/photo-mob/hotel-homepage-collage-mob-01-1x.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -13,7 +13,7 @@
 
     @include retina2x {
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url('../images/photo-mob/hotel-homepage-collage-mob-01-2x (1).jpg');
+            url('../images/photo-mob/hotel-homepage-collage-mob-01-2x.jpg');
     }
 
     @include tablet {
@@ -23,11 +23,11 @@
         padding-right: unset;
         height: 620px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-            url('../images/photo-tab/hotel-homepage-collage-tab-01-1x (1).jpg');
+            url('../images/photo-tab/hotel-homepage-collage-tab-01-1x.jpg');
 
         @include retina2x {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-                url('../images/photo-tab/hotel-homepage-collage-tab-01-2x (1).jpg');
+                url('../images/photo-tab/hotel-homepage-collage-tab-01-2x.jpg');
         }
     }
 
