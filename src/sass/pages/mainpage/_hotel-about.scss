@@ -5,6 +5,7 @@
 
     @media screen and(min-width: $tablet) {
         padding-top: 120px;
+        
     }
 }
 
@@ -82,6 +83,8 @@ ul {
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
     margin-bottom: 32px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
 
     @media screen and(min-width: $tablet) {
         position: absolute;
@@ -100,13 +103,20 @@ ul {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-
+    @media screen and(min-width:$tablet) {
+        padding-bottom: 262px;
+    }
+    @media screen and(min-width: $desktop) {
+        padding-bottom: 197px;
+    }
 }
 
 .hotel-about__image-second{
     background: $brown-text-color;
     box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+    
+    
 }
 
 .list-second__description{
@@ -127,4 +137,9 @@ ul {
             width: 312px;
             margin-right: 48px;
         }
+}
+
+.double-picture{
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
 }
