@@ -1,13 +1,15 @@
 // hotel
 @import './hotel/hotel';
+@import './hotel/hero';
 
 //mainpage
+
 @import './mainpage/contacts';
 @import './mainpage/hotel-about';
 @import './mainpage/hotel-details';
 @import './mainpage/restaraunt-about';
 @import './mainpage/restaraunt-details';
-@import './room/amenities';
+@import './mainpage/hero';
 
 // // modal-pages
 // @import './modal-pages/modal-price';
@@ -15,8 +17,10 @@
 // @import './modal-pages/modal-table';
 
 // restaraunt
+@import './restaraunt/hero';
 @import './restaraunt/kitchen-about';
 @import './restaraunt/menu';
 
 // room
 @import './room/amenities';
+@import './room/hero';

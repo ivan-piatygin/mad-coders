@@ -1,141 +1,148 @@
 .footer {
-    height: 240px;
-    background-color: $footer-background;
-    display: flex;
-    @include tablet{height: 304px;}
+  height: 240px;
+  background-color: $footer-background;
+  display: flex;
+  @include tablet {
+    height: 304px;
+  }
 }
 
 .footer .container {
-    padding: 0;
-    width: 100%;
-    display: flex;
-    align-items: center;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .footer-logo {
-    @extend %logo;
-    color: $accent-color;
-    @include font(40px, calc(43/40), 700, 0.3em);
-    @media screen and(max-width:1023px) {
-        margin-left: 59px;
-        max-width: 127px;
-    }
+  @extend %logo;
+  color: $accent-color;
+  @include font(40px, calc(43 / 40), 700, 0.3em);
+  @media screen and(max-width:1023px) {
+    margin-left: 59px;
+    max-width: 127px;
+  }
 
-    @include tablet {
-        font-size: 64px;
-        line-height: calc(69/64);
-        margin-left: 0px;
-    }
+  @include tablet {
+    font-size: 64px;
+    line-height: calc(69 / 64);
+    margin-left: 0px;
+  }
 }
 
 .block-logo {
-    width: 50%;
-    display: flex;
-    justify-content: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .block-navigation {
-    width: 50%;
-    margin-left: 85px;
+  width: 50%;
+  margin-left: 85px;
 
-    @include tablet {
-        margin-left: 0px;
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-    }
-
+  @include tablet {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 
 .footer-navigation {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 
-    @include tablet {
-        margin-bottom: 0;
-        margin-right: 137px;
-    }
+  @include tablet {
+    margin-bottom: 0;
+    margin-right: 137px;
+  }
 
-    @include desktop {
-        margin-right: 199px;
-    }
+  @include desktop {
+    margin-right: 199px;
+  }
 }
 
 .footer-navigation__item {
-    &:not(:last-child) {
-        margin-bottom: 16px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
 
-    @include tablet {
-        margin-bottom: 0;
-    }
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .footer-navigation__link {
-    font-family: $montserrat-font;
-    display: inline-block;
-    color: $accent-color;
-    @include font(20px, calc(24 / 20), 500, 0.02em);
-    &:hover,&:focus{color: white;}
+  font-family: $montserrat-font;
+  display: inline-block;
+  color: $accent-color;
+  @include font(20px, calc(24 / 20), 500, 0.02em);
+  &:hover,
+  &:focus {
+    color: white;
+  }
 }
 
 .footer-navigation__link:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .social {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 
-    @include tablet {
-        display: flex;
-        flex-direction: column-reverse;
-    }
+  @include tablet {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 .social__link {
-    @include tablet {
-        display: inline-flex;
-        justify-content: space-between;
-        text-decoration: none;
-        padding: 10px 12px;
-        border: 0.5px solid $accent-color;
-        border-radius: 2px;
-        width: 144px;
-&:hover,&:focus{background-color: $white;}
-        &:not(:last-child) {
-            margin-bottom: 12px;
-        }
+  @include tablet {
+    display: inline-flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding: 10px 12px;
+    border: 0.5px solid $accent-color;
+    border-radius: 2px;
+    width: 144px;
+    &:hover,
+    &:focus {
+      background-color: $white;
     }
-&:hover .social__name,
-&:focus .social__name{
+    &:not(:last-child) {
+      margin-bottom: 12px;
+    }
+  }
+  &:hover .social__name,
+  &:focus .social__name {
     color: black;
-}
+  }
 }
 .social__name {
-    display: none;
+  display: none;
 
-    @include tablet {
-        display: inline-block;
-        font-family: 'Montserrat';
-        @include font(16px, calc(20/16), 400, 00.02em);
-        color: $accent-color;
-    }
-        &:hover,
-        &:focus {
-            color: $black;
-        }
+  @include tablet {
+    display: inline-block;
+    font-family: 'Montserrat';
+    @include font(16px, calc(20 / 16), 400, 00.02em);
+    color: $accent-color;
+  }
+  &:hover,
+  &:focus {
+    color: $black;
+  }
 }
 
 .social__icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    opacity: 0.7;
-    @include tablet {
-opacity: 1;
-    }
-         &:hover,
-         &:focus {
-             fill: $black;
-         }
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  @include tablet {
+    opacity: 1;
+  }
+  &:hover,
+  &:focus {
+    fill: $black;
+  }
 }
