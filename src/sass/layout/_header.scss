@@ -3,10 +3,12 @@
 background-color: rgba(7, 2, 2, 0.822);
 
 background-image: url(../images/photo-desk/homepage-desk-2x\ \(1\).jpg);
-
+background-size: cover;
+background-repeat: no-repeat;
 position: relative;
 display: flex;
 justify-content: center;
+max-width: 100%;
 height: 740px;
 @media (min-width: $tablet) {
   height: 720px;
@@ -157,8 +159,9 @@ text-decoration: none;
   }
   @media (min-width: 1280px) {
     display: flex;
-    align-items: center;
+    // align-items: center;
     margin-left: auto;
+    padding-top: 32px;
   }
 }
 .socials__list {
