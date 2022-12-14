@@ -25,9 +25,9 @@
   padding-left: 15px;
   padding-right: 15px;
   position: absolute;
-  top: 20%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%, -50%);
   z-index: 30;
 
   text-align: center;
@@ -41,7 +41,7 @@
     width: 712px;
     max-width: 712px;
     padding: 60px;
-    transform: translate(-50% -50%);
+    transform: translate(-50%, -50%);
   }
 }
 
