@@ -1,0 +1,45 @@
+<div class="modal" data-modal="3">
+  <button type="button" class="close-button js-modal-close">
+    <svg width="24" height="24" class="modal__cross">
+      <use href="./images/icons/symbol-defs.svg#icon-close-button"></use>
+    </svg>
+  </button>
+  <form action="#" class="price-form">
+    <h2 class="price-form__title">Ціни на номер</h2>
+    <h3 class="price-form__subtitle">Двомісний люкс</h3>
+    <p class="price-form__text">Категорія номеру</p>
+    <div class="price-form__wrap">
+      <div class="price-form__field">
+        <div class="select-wrap">
+          <select class="price-form__select" name="day" id="day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <label for="day" class="price-form__label"> Кількість ночей</label>
+      </div>
+      <div class="price-form__field">
+        <input
+          class="price-form__input"
+          type="number"
+          value="1000"
+          disabled
+          id="price"
+        />
+
+        <label for="price" class="price-form__label">грн</label>
+      </div>
+    </div>
+    <button class="form-btn" type="submit">Забронювати номер</button>
+  </form>
+</div>
+
+<div class="overlay js-overlay-modal"></div>

@@ -1,24 +1,63 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+
+    <!----Slick jquery ---->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <!-- <include src="./partials/example.html"></include> -->
+
     <include src="./partials/header.html"></include>
     <main>
       <include src="./partials/pages/mainpage/hero.html"></include>
       <include src="./partials/pages/mainpage/restaurant-about.html"></include>
-      <include src="./partials/pages/mainpage/restaraunt-details.html"></include>
+      <include
+        src="./partials/pages/mainpage/restaraunt-details.html"
+      ></include>
       <include src="./partials/pages/mainpage/hotel-about.html"></include>
       <include src="./partials/pages/mainpage/hotel-details.html"></include>
       <include src="./partials/pages/mainpage/contacts.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
+    <include src="./partials/pages/modal-pages/modal-table.html"></include>
+    <include src="./partials/pages/modal-pages/modal-room.html"></include>
+    <include src="./partials/pages/modal-pages/modal-price.html"></include>
+
+    <!-- <section>
+      <div class="one-time">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+      </div>
+    </section> -->
+
+    <!-----Slick js ---->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!----base js ---->
+    <script type="module" src="./js/slick.js"></script>
+
+    <!-- modal js -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>

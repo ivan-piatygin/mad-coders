@@ -1,0 +1,84 @@
+<div class="modal" data-modal="2">
+  <button type="button" class="close-button js-modal-close">
+    <svg width="24" height="24" class="modal__cross">
+      <use href="./images/icons/symbol-defs.svg#icon-close-button"></use>
+    </svg>
+  </button>
+
+  <form class="room-form" action="#">
+    <h2 class="room-form__title">Забронювати номер</h2>
+    <div class="room-form__field">
+      <label class="room-form__label" for="client-name">
+        <input
+          class="room-form__input"
+          type="text"
+          id="client-name"
+          placeholder="Ваше ім’я"
+          title="Вкажіть своє ім'я"
+          pattern="([a-zA-Zа-яА-Я]+)"
+          required
+        /><span class="text">На кого забронювати номер?</span></label
+      >
+
+      <label class="room-form__label" for="client-tel">
+        <input
+          class="room-form__input"
+          type="tel"
+          id="client-tel"
+          placeholder="+38 (___) ___-__-__"
+          title="Номер телефону повинен бути в форматі '+380xxxxxxxxx'"
+          pattern="([+][0-9\+]{12})"
+          required
+        /><span class="text">Номер телефону</span></label
+      >
+    </div>
+
+    <div class="room-form__field">
+      <label class="room-form__label" for="room-category">
+        <div class="select-wrap">
+          <select
+            class="room-form__select"
+            name="room-category"
+            id="room-category"
+          >
+            <option value="1" selected>Двомісний люкс</option>
+            <option value="2">Двомісний номер</option>
+            <option value="3">Трьохмісний номер</option>
+          </select>
+        </div>
+        <span class="text">Категорія номеру</span>
+      </label>
+    </div>
+
+    <div class="room-form__field">
+      <label class="room-form__label" for="checkin-date">
+        <div class="select-wrap">
+          <select class="room-form__select" name="" id="checkin-date">
+            <option value="1" selected>Сьогодні</option>
+            <option value="2">Завтра</option>
+            <option value="3">Післязавтра</option>
+          </select>
+        </div>
+        <span class="text">Дата заїзду</span>
+      </label>
+
+      <label class="room-form__label" for="checkout-date"
+        ><div class="select-wrap">
+          <select
+            class="room-form__select"
+            name="checkout-date"
+            id="checkout-date"
+          >
+            <option value="1" selected>Сьогодні</option>
+            <option value="2">Завтра</option>
+            <option value="3">Післязавтра</option>
+          </select>
+        </div>
+        <span class="text">Дата виїзду</span></label
+      >
+    </div>
+    <button class="form-btn" type="submit">Оформити бронювання</button>
+  </form>
+</div>
+
+<div class="overlay js-overlay-modal"></div>
