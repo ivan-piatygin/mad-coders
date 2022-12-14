@@ -93,7 +93,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-direction: column;
-    text-align: right;
+    // text-align: right;
     justify-content: center;
   }
 }
@@ -106,8 +106,8 @@
     width: 434px;
   }
 
-  background-color: #000000;
-  border: 1px solid #F3C653;
+  background-color:$black;
+  border: 1px solid $accent-color;
   border-radius: 25px;
   font-family: $montserrat-font;
   font-style: normal;
@@ -121,48 +121,51 @@
   }
 
   text-transform: uppercase;
-  color: #FFFFFF;
+  color:$white;
   margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 32px;
   }
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms $main-transtition-timing-function,
+  color 250ms $main-transtition-timing-function;
 
   &:hover,
   &:focus {
-    color: #000000;
-    background-color: #F3C653;
+    color:$black;
+    background-color: $accent-color;
   }
 
   margin-left: auto;
 }
 
 .amenities-link {
-  width: 351px;
-
-  @media screen and (min-width: $tablet) {
-    width: 433px;
-  }
-
-  display: flex;
-  font-family: 'Montserrat';
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-
-  @media screen and (min-width: $tablet) {
-    font-size: 20px;
-    line-height: 1.2;
-  }
-
-  letter-spacing: 0.02em;
-  color: #C79002;
-  text-decoration: none;
-  justify-content: center;
-  margin-left: auto;
+    width: 351px;
+    margin: 0 auto;
+    display: flex;
+    font-family: $montserrat-font;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: $brown-text-color;
+    text-decoration: none;
+  
+    @media screen and (min-width: $tablet) {
+      margin-left: auto;
+      margin-right: 0;
+      width: 433px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+  
+    transition: color 250ms $main-transtition-timing-function;
+  
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
 }
 
 .amenities-link-icon {
