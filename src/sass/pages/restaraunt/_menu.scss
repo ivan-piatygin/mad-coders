@@ -42,6 +42,11 @@ font-family: 'TimesNewRoman';
 
         margin-top: 16px;
     margin-bottom: 16px;
+
+    @include tablet{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .dish{
@@ -72,10 +77,21 @@ padding-top: 8px;
     font-size: 14px;
     line-height: calc(17/14);    
     letter-spacing: 0.02em;
-    min-width: 52px;
+    width: 52px;
 
     text-align: center;
 
+    @include tablet{
+        width:145px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    @include desktop{
+        width:180px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
     
 }
 
@@ -120,20 +136,12 @@ padding-top: 8px;
     }
 }
 
-// .menu-restaurant_item{
-    
-//     @include tablet{
+.menu-restaurant_item{
 
-//         margin-right: 88px;
-        
-//         &:nth-child(2) {
-//             margin-right: 0px;
-//         }
-
-//         &.deserts{
-//             margin-right: 0px;
-//         }
-//     }
+    @include tablet{
+        min-width: 350px;
+    }
+}
 
 
 
