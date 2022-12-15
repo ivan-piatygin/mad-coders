@@ -1,0 +1,77 @@
+.hero--room {
+  background-image: 
+    url('../images/photo-mob/main-room-double-mob-1x.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: 
+      url('../images/photo-mob/main-room-double-mob-2x.jpg');
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: 
+      url('../images/photo-tab/main-room-double-tab-1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url('../images/photo-tab/main-room-double-tab-1x.jpg');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: 
+      url('../images/photo-desk/main-room-double-desk-1x.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: 
+        url('../images/photo-desk/main-room-double-desk-1x.jpg');
+    }
+  }
+}
+
+
+.hero--room__title {
+    margin-top: 300px;
+margin-bottom: 14px;
+font-family: $times-font;
+font-weight: 700;
+font-size: 28px;
+line-height: 1.2;
+letter-spacing: 0.05em;
+color: #ffff;
+}
+
+.hero--room__text {
+    margin-bottom: 30px;
+  font-family: $montserrat-font;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+}
+
+.hero--room__about {
+    width: 325px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .hero-homepage__button--room {
+    position: absolute;
+    right: 47px;
+    bottom: 64px;
+}
+}

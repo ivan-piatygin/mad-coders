@@ -1,7 +1,6 @@
 .restaraunt-details{
     padding-top: 24px;
     max-width: 1600px;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
         background-size: cover;
@@ -115,6 +114,7 @@
     display: inline-flex;
     flex-direction: column;
     gap: 16px;
+    
 
     @media screen and(min-width: $tablet) {
         margin-right: auto;
@@ -123,7 +123,9 @@
 
 .slider-position{
     padding-bottom: 40px;
-        flex-direction: column-reverse;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     @media screen and(min-width: $tablet) {
         display: flex;
@@ -132,5 +134,11 @@
             justify-content: center;
             padding-bottom: 96px;
             align-items: flex-end;
+    }
+}
+
+.slider-position--direction{
+    @media screen and(min-width:$tablet) {
+        flex-direction: row;
     }
 }
