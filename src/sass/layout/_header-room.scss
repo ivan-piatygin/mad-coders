@@ -1,0 +1,25 @@
+.socials__list-room {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    @media (max-width: 1279px){
+      position: absolute;
+    }
+    
+    gap: 10px;
+    left: -385px;
+    top: 630px;
+    @media (min-width: $tablet) {
+        flex-direction: row;
+        gap: 20px;
+      left: -939px;
+      top: 676px;
+    }
+    @media screen and (min-width: $desktop) {
+   margin-left: 59px;
+    }
+  }
+  .socials__icon {
+    fill: $brown-text-color;
+    opacity: 0.7;
+  }
