@@ -30,10 +30,12 @@ ul {
 
 a {
   text-decoration: none;
+  z-index: 999;
 }
 
 button {
   cursor: pointer;
+  z-index: 999;
 }
 
 
@@ -78,4 +80,8 @@ table {
     max-width: 1280px;
     padding: 0 85px;
   }
+}
+
+.modal {
+  z-index: 9999;
 }

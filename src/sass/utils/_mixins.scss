@@ -42,11 +42,10 @@
   }
 }
 
-// для калькуляції сітки
 @mixin retina3x {
-@media (min-device-pixel-ratio: 3),
-  (min-resolution: 288dpi),
-  (min-resolution: 3dppx) {
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
     @content;
   }
 }

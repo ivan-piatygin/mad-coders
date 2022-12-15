@@ -1,0 +1,185 @@
+.hero-mainpage__button:hover,
+.hero-mainpage__button:focus {
+  border: 2px solid $accent-color;
+}
+
+.rooms-section {
+  background-color: $light-lemon-background;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include tablet {
+    padding-top: 62px;
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-top: 72px;
+  }
+  &:nth-child(2n+1) .rooms-info {
+    margin-left: 67px;
+  }
+  &:nth-child(2n+1) .rooms-info__slogan {
+    text-align: end;
+  }
+  &:nth-child(2n+1) .rooms-info__logo {
+    text-align: end;
+  }
+  &:nth-child(2n+1) .rooms-wrap-top__img {
+    margin-left: 0;
+  }
+  &:nth-child(2n+1) .slider {
+    margin-left: auto;
+  }
+
+  &:nth-child(2n+1) .rooms-wrap-top {
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+  }
+  &:nth-child(2n+1) .rooms-wrap-bottom {
+    @include tablet {
+      flex-direction: row-reverse;
+    }
+  }
+  &:nth-child(2n+1) .rooms-info {
+    @include tablet {
+      margin-left: 45px;
+    }
+    &__text {
+      @include tablet {
+        max-width: 400px;
+      }
+    }
+  }
+}
+
+.rooms-section--reverse {
+  background-color: $dark-lemon-background;
+}
+
+.rooms-wrap-top {
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 48px;
+    display: flex;
+  }
+  &__img {
+    display: block;
+    margin-left: auto;
+    background-color: $images-background;
+    border-radius: 2px;
+    box-shadow: 2px 2px 60px 2px $picture-shadow;
+    @include tablet {
+      margin-top: -94px;
+    }
+    @include desktop {
+      margin-top: -105px;
+    }
+  }
+}
+
+.rooms-info {
+  &__slogan {
+    font-family: $times-font;
+    @include font(20px, 1.15, 400, null);
+    color: $pre-title-color;
+    margin-bottom: 8px;
+    @include tablet {
+      font-size: 32px;
+      margin-bottom: 4px;
+    }
+  }
+  &__logo {
+    font-family: $film-font;
+    @include font(40px, 1.08, 700, 0.3em);
+    text-transform: uppercase;
+    color: $contacts-color;
+    margin-bottom: 32px;
+    @include tablet {
+      font-size: 64px;
+      margin-bottom: 62px;
+    }
+    @include desktop {
+      font-size: 64px;
+      margin-bottom: 72px;
+    }
+  }
+  &__title {
+    font-family: $times-font;
+    @include font(24px, 1.17, 700, 0.05em);
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    &__lowercase {
+      text-transform: lowercase;
+    }
+    @include tablet {
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+    @include desktop {
+      font-size: 36px;
+      margin-bottom: 24px;
+    }
+  }
+  &__text {
+    max-width: 258px;
+    font-family: $montserrat-font;
+    @include font(12px, 1.25, 600, 0.02em);
+    color: $second-text-color;
+    @include tablet {
+      max-width: 439px;
+      font-size: 16px;
+      margin-right: 26px;
+    }
+    @include desktop {
+      max-width: 400px;
+      margin-right: 155px;
+    }
+  }
+}
+
+.rooms-wrap-bottom {
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.slider {
+  width: 284px;
+  height: 246px;
+  border: solid palevioletred;
+  @include tablet {
+    width: 428px;
+    height: 258px;
+  }
+  @include desktop {
+    width: 548px;
+    height: 327px;
+  }
+}
+
+.rooms-btn {
+  margin-top: 20px;
+  @include tablet {
+    margin-top: 0;
+  }
+  &__item {
+    display: block;
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+    @include tablet {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .rooms-info {
+    margin-bottom: 32px;
+  }
+}

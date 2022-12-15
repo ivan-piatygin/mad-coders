@@ -39,7 +39,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
 
-  color: #7A7A7A;
+  color: #7a7a7a;
   margin-bottom: 32px;
 }
 
@@ -86,7 +86,7 @@
   line-height: 1.25;
   letter-spacing: 0.02em;
 
-  color: #7A7A7A;
+  color: #7a7a7a;
 }
 
 .amenities-wrapper {
@@ -106,7 +106,7 @@
     width: 434px;
   }
 
-  background-color:$black;
+  background-color: $black;
   border: 1px solid $accent-color;
   border-radius: 25px;
   font-family: $montserrat-font;
@@ -121,7 +121,7 @@
   }
 
   text-transform: uppercase;
-  color:$white;
+  color: $white;
   margin-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
@@ -129,11 +129,11 @@
   }
 
   transition: background-color 250ms $main-transtition-timing-function,
-  color 250ms $main-transtition-timing-function;
+    color 250ms $main-transtition-timing-function;
 
   &:hover,
   &:focus {
-    color:$black;
+    color: $black;
     background-color: $accent-color;
   }
 
@@ -141,38 +141,44 @@
 }
 
 .amenities-link {
-    width: 351px;
-    margin: 0 auto;
-    display: flex;
-    font-family: $montserrat-font;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: $brown-text-color;
-    text-decoration: none;
-  
-    @media screen and (min-width: $tablet) {
-      margin-left: auto;
-      margin-right: 0;
-      width: 433px;
-      font-size: 20px;
-      line-height: 1.2;
-    }
-  
-    transition: color 250ms $main-transtition-timing-function;
-  
-    &:hover,
-    &:focus {
-      color: $accent-color;
-    }
+  width: 351px;
+  margin: 0 auto;
+  display: flex;
+  font-family: $montserrat-font;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: $brown-text-color;
+  text-decoration: none;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: auto;
+    margin-right: 0;
+    width: 433px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  transition: color 250ms $main-transtition-timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .amenities-link-icon {
   fill: currentColor;
   margin-left: 12px;
+  opacity: 1;
+  transition: opacity 250ms $main-transtition-timing-function;
 
   @media screen and (min-width: $tablet) {
     margin-left: 16px;
   }
+}
+
+.amenities-link:hover > .amenities-link-icon {
+  opacity: 0;
 }
