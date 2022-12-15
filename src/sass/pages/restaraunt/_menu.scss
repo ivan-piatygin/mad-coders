@@ -28,7 +28,7 @@ font-family: 'TimesNewRoman';
     font-size: 32px;
     line-height: calc(37/32);
 
-    margin-bottom: 32px;
+    margin-bottom: 16px;
 }
 
 .menu-restaurant_caption{
@@ -72,9 +72,11 @@ padding-top: 8px;
     font-size: 14px;
     line-height: calc(17/14);    
     letter-spacing: 0.02em;
-    width: 52px;
+    min-width: 52px;
 
     text-align: center;
+
+    
 }
 
 .price{
@@ -99,8 +101,39 @@ padding-top: 8px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+
+    @include tablet{
+        margin-right: 0px;
+    }
 }
 
 .dish_description {
     padding-top: 4px;
 }
+
+.menu-restaurant_list{
+
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+// .menu-restaurant_item{
+    
+//     @include tablet{
+
+//         margin-right: 88px;
+        
+//         &:nth-child(2) {
+//             margin-right: 0px;
+//         }
+
+//         &.deserts{
+//             margin-right: 0px;
+//         }
+//     }
+
+
+
