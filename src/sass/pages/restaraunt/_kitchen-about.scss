@@ -96,6 +96,10 @@
     }
 }
 
+.about-kitchen_bottom-card{
+    border-radius: 2px;
+}
+
 .about-kitchen__text-bottom {
     width: 163px;
     font-weight: 600;
@@ -108,4 +112,9 @@
         width: 312px;
         font-size: 16px;
     }
+}
+
+.double-picture {
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
 }
