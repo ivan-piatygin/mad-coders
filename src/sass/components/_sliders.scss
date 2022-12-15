@@ -3,6 +3,7 @@
 // ---------------------- Потрійний слайдер ---------------------- \\
 .tripple-slider {
     min-width: 0;
+    position: relative;
 
     @media screen and(max-width: $tablet) {
         padding-bottom: 80px;
@@ -37,46 +38,42 @@
 
 .slick-arrow {
     position: absolute;
-    top: 515px;
     font-size: 0;
     z-index: 10;
     width: 30px;
     height: 17px;
 
-    @media screen and(min-width:320px) {}
-
     @media screen and(min-width: $mobile) {
-        top: 509px;
+        top: 302px;
     }
 
     @media screen and(min-width:$tablet) {
-        top: 504px;
+        top: 312px;
     }
 
     @media screen and(min-width:$desktop) {
-        top: 504px;
+        top: 310px;
     }
 
 
 }
 
 .slick-arrow.slick-next {
-    right: 280px;
     border: none;
     background-color: transparent;
     background-position: center;
     background-image: url(../images/Vectorright.svg);
 
-    @media screen and(max-width: $mobile) {
-        right: 165px;
+    @media screen and(min-width: $mobile) {
+        right: 277px;
     }
 
     @media screen and(min-width: $tablet) {
-        right: 610px;
+        right: 566px;
     }
 
     @media screen and(min-width: $desktop) {
-        right: 709px;
+        right: 629px;
     }
 
     &:hover,
@@ -86,20 +83,21 @@
 }
 
 .slick-arrow.slick-prev {
-    left: 15px;
     border: none;
     background-color: transparent;
 
     background-image: url(../images/Vectorleft.svg);
 
-
+@media screen and(min-width: $mobile) {
+        left: 0;
+    }
 
     @media screen and(min-width: $tablet) {
-        left: 320px;
+        left: 0;
     }
 
     @media screen and(min-width: $desktop) {
-        left: 475px;
+        left: 0;
     }
 
     &:hover,
@@ -118,29 +116,29 @@
 
 .tripple-slider--mirror .slick-arrow.slick-next{
 @media screen and(min-width: $mobile) {
-        right: 15px;
+        right: 0;
     }
 
     @media screen and(min-width: $tablet) {
-        right: 47px;
+        right: 0;
     }
 
     @media screen and(min-width: $desktop) {
-        right: 87px;
+        right: 0;
     }
 }
 
 .tripple-slider--mirror .slick-arrow.slick-prev{
     @media screen and(min-width: $mobile) {
-            left: 305px;
+            left: 285px;
         }
 
     @media screen and(min-width: $tablet) {
-            left: 860px;
+            left: 566px;
         }
     
         @media screen and(min-width: $desktop) {
-            left: 1075px;
+            left: 604px;
         }
 }
 
@@ -185,6 +183,7 @@
         bottom: 0px;
    }
 }
+
 
 .double-slider .slick-arrow {
     position: absolute;
@@ -298,3 +297,10 @@
             left: 400px;
         }
 }
+
+
+// ---------------------- Подвійний слайдер--rooms ---------------------- \\
+.slider-pos--rooms{
+position: relative;
+}
+
