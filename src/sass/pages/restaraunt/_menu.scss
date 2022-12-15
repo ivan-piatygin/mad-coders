@@ -1,0 +1,147 @@
+.menu-restaurant{
+    background-color: $light-lemon-background;
+
+@include tablet{
+    background-color: $dark-lemon-background;
+}
+
+& .container{
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    @include tablet{
+        padding-top: 58px;
+        padding-bottom: 40px;
+    }
+
+    @include desktop {
+        padding-top: 58px;
+        padding-bottom: 60px;
+    }
+}
+}
+
+.menu-restaurant_second-heading{
+font-family: 'TimesNewRoman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(37/32);
+
+    margin-bottom: 16px;
+}
+
+.menu-restaurant_caption{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+
+    text-align: left;
+
+        margin-top: 16px;
+    margin-bottom: 16px;
+
+    @include tablet{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+.dish{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: calc(17/14);
+
+padding-top: 8px;
+}
+
+.ingridients{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: calc(12/10);
+    letter-spacing: 0.02em;
+
+    width: 220px;
+}
+
+.weight{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: calc(17/14);    
+    letter-spacing: 0.02em;
+    width: 52px;
+
+    text-align: center;
+
+    @include tablet{
+        width:145px;
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    @include desktop{
+        width:180px;
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    
+}
+
+.price{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(17/14);    
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+
+.desert, .drink{
+    width: 220px;
+}
+
+.menu_button{
+
+    margin-top: 32px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include tablet{
+        margin-right: 0px;
+    }
+}
+
+.dish_description {
+    padding-top: 4px;
+}
+
+.menu-restaurant_list{
+
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.menu-restaurant_item{
+
+    @include tablet{
+        min-width: 350px;
+    }
+}
+
+
+
