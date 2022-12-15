@@ -1,2 +1,2 @@
 $(".single-slider").slick({dots:!0,infinite:!0,speed:300,slidesToShow:1,swipeToSlide:!0,adaptiveHeight:!0}),$(".tripple-slider").slick({dots:!1,infinite:!0,speed:300,slidesToShow:3,swipeToSlide:!0,adaptiveHeight:!0,variableWidth:!0}),$(".double-slider").slick({dots:!1,infinite:!0,speed:300,slidesToShow:2,swipeToSlide:!0,adaptiveHeight:!0,variableWidth:!0});
-//# sourceMappingURL=index.ec259e47.js.map
+//# sourceMappingURL=restaurant.868546f7.js.map
