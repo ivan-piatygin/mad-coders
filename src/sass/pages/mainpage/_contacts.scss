@@ -261,6 +261,17 @@
     }
 }
 
+.wrap_list_map{
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+
+@media screen and(max-width:$tablet) {
+    flex-direction: column;
+    align-items: center;
+}
+}
+
 
 
 
