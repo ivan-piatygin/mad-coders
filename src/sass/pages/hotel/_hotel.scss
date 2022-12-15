@@ -14,33 +14,33 @@
   @include desktop {
     padding-top: 72px;
   }
-  &:nth-child(2n) .rooms-info {
+  &:nth-child(2n+1) .rooms-info {
     margin-left: 67px;
   }
-  &:nth-child(2n) .rooms-info__slogan {
+  &:nth-child(2n+1) .rooms-info__slogan {
     text-align: end;
   }
-  &:nth-child(2n) .rooms-info__logo {
+  &:nth-child(2n+1) .rooms-info__logo {
     text-align: end;
   }
-  &:nth-child(2n) .rooms-wrap-top__img {
+  &:nth-child(2n+1) .rooms-wrap-top__img {
     margin-left: 0;
   }
-  &:nth-child(2n) .slider {
+  &:nth-child(2n+1) .slider {
     margin-left: auto;
   }
 
-  &:nth-child(2n) .rooms-wrap-top {
+  &:nth-child(2n+1) .rooms-wrap-top {
     @include tablet {
       flex-direction: row-reverse;
     }
   }
-  &:nth-child(2n) .rooms-wrap-bottom {
+  &:nth-child(2n+1) .rooms-wrap-bottom {
     @include tablet {
       flex-direction: row-reverse;
     }
   }
-  &:nth-child(2n) .rooms-info {
+  &:nth-child(2n+1) .rooms-info {
     @include tablet {
       margin-left: 45px;
     }
