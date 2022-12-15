@@ -44,6 +44,10 @@ font-size: 28px;
 line-height: 1.2;
 letter-spacing: 0.05em;
 color: #ffff;
+
+@media screen and (min-width:1280px) {
+    margin-top: 356px;
+}
 }
 
 .hero--room__text {
@@ -56,6 +60,11 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 
 color: #FFFFFF;
+
+    @media screen and (min-width:1024px) {
+        width: 320px;
+        
+    }
 }
 
 .hero--room__about {
@@ -64,6 +73,12 @@ color: #FFFFFF;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+
+    @media screen and (min-width:1024px) {
+        width: 507px;
+        align-items: normal;
+    }
 }
 
 
@@ -71,7 +86,15 @@ color: #FFFFFF;
 
     .hero-homepage__button--room {
     position: absolute;
-    right: 47px;
-    bottom: 64px;
+    right: 77px;
+    bottom: 22px;
+}
+}
+
+
+ @media screen and (min-width:1280px) {
+
+    .hero__address--room {
+    display: none;
 }
 }

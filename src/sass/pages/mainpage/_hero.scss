@@ -1,4 +1,5 @@
 .hero {
+width: 100%;
   position: relative;
   margin: auto;
   height: 740px;
@@ -6,6 +7,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @media screen and (min-width:1024px) {
+    height: 720px;
+  }
 }
 
 .hero--main {
@@ -49,7 +54,6 @@
   }
 
   @media screen and (min-width: $desktop) {
-    max-width: 1600px;
     padding-top: 164px;
     padding-bottom: 65px;
     padding-left: 85px;
@@ -128,6 +132,18 @@
   }
 }
 
+.hero__pre-title--hotel {
+    margin-bottom: 178px;
+
+    @media screen and (min-width: 1024px) {
+        margin-bottom: 226px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 249px;
+    }
+}
+
 .hero__text {
   margin: 0 auto;
   text-align: center;
@@ -152,9 +168,9 @@
 }
 
 .hero__address {
+  padding: 4px 7px 3px 42px;
   width: 210px;
   height: 47px;
-  /* padding: 5px; */
 
   position: absolute;
 
@@ -166,8 +182,8 @@
 
 @media screen and (min-width: 414px) and (max-width: 1023px) {
   .hero__address {
-    top: 64px;
-    right: 15px;
+    top: -115px;
+    right: 10px;
     width: 210px;
     height: 47px;
   }
@@ -175,11 +191,33 @@
 
 @media screen and (min-width: 1024px) {
   .hero__address {
-    bottom: 64px;
+    padding: 8px 7px 3px 42px;
+    bottom: -209px;
     left: 47px;
     width: 285px;
     height: 56px;
+
   }
+
+  .hero__address--hotel {
+    bottom: -293px;
+  }
+}
+
+
+@media screen and (min-width: 1280px) {
+  .hero__address {
+    left: 0px;
+  }
+
+    .hero__address--hotel {
+    left: 85px;
+    bottom: -314px;
+  }
+
+      .hero__address--rest  {
+      left: 85px;
+    }
 }
 
 .hero__address-link {
@@ -198,6 +236,18 @@
   }
 }
 
+
+.hero__address-item {
+ position: absolute;
+ left: 11px;
+ bottom: 14px;
+
+ @media screen and (min-width:1024px) {
+    bottom: 17px;
+ }
+
+}
+
 .hero_address-img {
   width: 12px;
   height: 19px;
@@ -210,7 +260,7 @@
   justify-content: space-between;
 }
 
-.button__list {
+.hero__button {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,7 +268,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .button__list {
+  .hero__button {
     display: flex;
     flex-direction: unset;
     gap: 24px;
@@ -227,7 +277,27 @@
     margin-top: 20px;
   }
 
-  .button__list--hotel {
-  margin-top: 200px;
 }
-}
+
+
+
+    @media screen and (min-width: 1280px){
+
+
+        .hero__button{
+         right: 0px;
+         gap: 60px;
+         right: -3px;
+        }
+
+        .hero__button--rest{
+            margin-top: 15px;
+            right: 77px;
+        }
+
+        .hero__button--hotel{
+            margin-top: 15px;
+            right: 77px;
+        }
+        
+    }
