@@ -169,11 +169,12 @@
 
 .rooms-btn {
   margin-top: 72px;
+  text-align: center;
   @include tablet {
     margin-top: 0;
   }
   &__item {
-    display: block;
+    display: inline-block;
     margin: 0 auto;
     &:not(:last-child) {
       margin-bottom: 16px;
