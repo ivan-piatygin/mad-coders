@@ -1,7 +1,3 @@
-.about-restaurant {
-    background-color: $light-lemon-background;
-}
-
 .about-restaurant__pretitle {
   font-weight: 400;
   font-size: 20px;
@@ -11,12 +7,14 @@
   color: $pre-title-color;
   margin-bottom: 12px;
   padding-top: 16px;
-  @media screen and (min-width: 1024px) {
+
+  @media screen and (min-width:1024px) {
     font-size: 32px;
     line-height: 1.16;
     padding-top: 120px;
     margin-bottom: 4px;
   }
+
 }
 
 .about-restaurant_title {
@@ -27,6 +25,7 @@
   letter-spacing: 0.3em;
   color: $contacts-color;
   margin-bottom: 12px;
+
   @media screen and (min-width: 1024px) {
     font-size: 64px;
     line-height: 1.08;
@@ -38,14 +37,17 @@
   flex-direction: column;
   display: flex;
   margin-bottom: 32px;
-  @media screen and (min-width: 1024px) {
+
+  @media screen and (min-width:1024px) {
     flex-direction: row;
     margin-bottom: 142px;
   }
+
   @media screen and (min-width: 1280px) {
     margin-bottom: 162px;
   }
 }
+
 .about-restaurant__text {
   width: 258px;
   font-weight: 600;
@@ -54,29 +56,33 @@
   letter-spacing: 0.02em;
   color: $second-text-color;
   margin-bottom: 28px;
+
   @media screen and (min-width: 1024px) {
     width: 419px;
     font-size: 16px;
     margin-bottom: 0;
   }
+
   @media screen and (min-width: 1280px) {
     width: 518px;
   }
 }
 
 .about-restaurant_top-card {
-  background: #dadada;
+  background: #DADADA;
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   margin-left: auto;
   margin-bottom: 16px;
-  @media screen and (min-width: 1024px) {
+
+  @media screen and (min-width:1024px) {
     position: absolute;
     top: -35px;
     right: 72px;
     margin-left: 0;
     margin-bottom: 0;
   }
+
   @media screen and (min-width: 1280px) {
     top: -15px;
     right: 175px;
@@ -87,14 +93,13 @@
   display: flex;
   align-items: center;
   gap: 20px;
+
   @media screen and (min-width: 1024px) {
     gap: 48px;
   }
 }
 
 .about-restaurant_bottom-card {
-  background: #dadada;
-  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
   margin-bottom: 32px;
 }
@@ -105,9 +110,16 @@
   font-size: 12px;
   line-height: 1.25;
   letter-spacing: 0.02em;
-  color: #c79002;
+  color: #C79002;
+
   @media screen and (min-width: 1024px) {
     width: 312px;
     font-size: 16px;
   }
+}
+
+.about-restaurant__picture {
+  background: #DADADA;
+  box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
 }
