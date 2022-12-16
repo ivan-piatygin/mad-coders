@@ -19,25 +19,92 @@
             </div>
             <picture>
                 <source srcset="./images/photo-desk/modern-studio-apartment-desk-1x.jpg 1x,
-                                        ./images/photo-desk/modern-studio-apartment-desk-2x.jpg 2x"
+                                                    ./images/photo-desk/modern-studio-apartment-desk-2x.jpg 2x"
                     media="(min-width: 1280px)">
                 <source srcset="./images/photo-tab/modern-studio-apartment-tab-1x.jpg 1x,
-                                        ./images/photo-tab/modern-studio-apartment-tab-2x.jpg 2x"
+                                                    ./images/photo-tab/modern-studio-apartment-tab-2x.jpg 2x"
                     media="(min-width: 1024px)">
                 <source srcset="./images/photo-mob/modern-studio-apartment-mob-1x.jpg 1x,
-                                        ./images/photo-mob/modern-studio-apartment-mob-2x.jpg 2x"
+                                                    ./images/photo-mob/modern-studio-apartment-mob-2x.jpg 2x"
                     media="(min-width: 414px)">
                 <img class="rooms-wrap-top__img" src="./images/photo-desk/modern-studio-apartment-desk-1x.jpg"
-                    alt="Двомісний номер люкс">
+                    alt="Двомісний номер">
             </picture>
         </div>
-        <div class="rooms-wrap-bottom">
-            <div class="slider"></div>
+        <div class="slider-pos slider-pos--rooms rooms-wrap-bottom">
+            <div class="double-slider double-slider--rooms">
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                        ./images/photo-desk/bathroom-1x.jpg 1x,
+                        ./images/photo-desk/bathroom-2x.jpg 2x       " />
+                        <source media="(min-width:1024px)" srcset="
+                        ./images/photo-tab/bathroom-elements-tab-1x.jpg 1x,
+                        ./images/photo-tab/bathroom-elements-tab-2x.jpg 2x      " />
+                        <source media="(min-width:414px)" srcset="
+                        ./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg 1x,
+                        ./images/photo-mob/arrangement-bathroom-elements-mob-2x.jpg 2x     " />
+                        <img src="./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg"
+                            alt="Фото для слайдера" />
+                    </picture>
+                </div>
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                        ./images/photo-desk/cup-tea-1x.jpg 1x,
+                                        ./images/photo-desk/cup-tea-2x.jpg 2x                      " />
+                        <source media="(min-width:1024px)" srcset="
+                                        ./images/photo-tab/cup-tea-tab-1x.jpg 1x,
+                                        ./images/photo-tab/cup-tea-tab-2x.jpg 2x               " />
+                        <source media="(min-width:414px)" srcset="
+                                        ./images/photo-mob/cup-tea-mob-1x.jpg 1x,
+                                        ./images/photo-mob/cup-tea-mob-2x.jpg 2x
+                                " />
+                        <img src="./images/photo-mob/cup-tea-mob-1x.jpg" alt="Фото для слайдера" />
+                    </picture>
+                </div>
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                                    ./images/photo-desk/bathroom-1x.jpg 1x,
+                                                    ./images/photo-desk/bathroom-2x.jpg 2x
+                                                " />
+                        <source media="(min-width:1024px)"
+                            srcset="
+                                                    ./images/photo-tab/bathroom-elements-tab-1x.jpg 1x,
+                                                    ./images/photo-tab/bathroom-elements-tab-2x.jpg 2x                                           " />
+                        <source media="(min-width:414px)" srcset="
+                                                    ./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg 1x,
+                                                    ./images/photo-mob/arrangement-bathroom-elements-mob-2x.jpg 2x
+                                                " />
+                        <img src="./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg"
+                            alt="Фото для слайдера" />
+                    </picture>
+                </div>
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                                                    ./images/photo-desk/cup-tea-1x.jpg 1x,
+                                                                    ./images/photo-desk/cup-tea-2x.jpg 2x
+                                                                " />
+                        <source media="(min-width:1024px)"
+                            srcset="
+                                                                    ./images/photo-tab/cup-tea-tab-1x.jpg 1x,
+                                                                    ./images/photo-tab/cup-tea-tab-2x.jpg 2x                                                               " />
+                        <source media="(min-width:414px)"
+                            srcset="
+                                                                    ./images/photo-mob/cup-tea-mob-1x.jpg 1x,
+                                                                    ./images/photo-mob/cup-tea-mob-2x.jpg 2x              " />
+                        <img src="./images/photo-mob/cup-tea-mob-1x.jpg" alt="Фото для слайдера" />
+                    </picture>
+                </div>
+            </div>
             <div class="rooms-btn">
                 <button class="hero-mainpage__button rooms-btn__item" type="button">
-                    <a href="">Детальніше</a>
+                    <a href="./room.html" class="link">Детальніше</a>
                 </button>
-                <button class="hero-mainpage__button rooms-btn__item" type="button">Переглянути
+                <button class="hero-mainpage__button rooms-btn__item js-open-modal" type="button"
+                    data-modal="3">Переглянути
                     ціни</button>
             </div>
         </div>
@@ -74,13 +141,80 @@
                     alt="Трьохмісний номер">
             </picture>
         </div>
-        <div class="rooms-wrap-bottom">
-            <div class="slider"></div>
+        <div class="slider-pos slider-pos--rooms rooms-wrap-bottom">
+            <div class="double-slider double-slider--rooms">
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                        ./images/photo-desk/bathroom-1x.jpg 1x,
+                                        ./images/photo-desk/bathroom-2x.jpg 2x       " />
+                        <source media="(min-width:1024px)" srcset="
+                                        ./images/photo-tab/bathroom-elements-tab-1x.jpg 1x,
+                                        ./images/photo-tab/bathroom-elements-tab-2x.jpg 2x      " />
+                        <source media="(min-width:414px)" srcset="
+                                        ./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg 1x,
+                                        ./images/photo-mob/arrangement-bathroom-elements-mob-2x.jpg 2x     " />
+                        <img src="./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg"
+                            alt="Фото для слайдера" />
+                    </picture>
+                </div>
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                                        ./images/photo-desk/cup-tea-1x.jpg 1x,
+                                                        ./images/photo-desk/cup-tea-2x.jpg 2x                      " />
+                        <source media="(min-width:1024px)" srcset="
+                                                        ./images/photo-tab/cup-tea-tab-1x.jpg 1x,
+                                                        ./images/photo-tab/cup-tea-tab-2x.jpg 2x               " />
+                        <source media="(min-width:414px)" srcset="
+                                                        ./images/photo-mob/cup-tea-mob-1x.jpg 1x,
+                                                        ./images/photo-mob/cup-tea-mob-2x.jpg 2x
+                                                " />
+                        <img src="./images/photo-mob/cup-tea-mob-1x.jpg" alt="Фото для слайдера" />
+                    </picture>
+                </div>
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                                                    ./images/photo-desk/bathroom-1x.jpg 1x,
+                                                                    ./images/photo-desk/bathroom-2x.jpg 2x
+                                                                " />
+                        <source media="(min-width:1024px)"
+                            srcset="
+                                                                    ./images/photo-tab/bathroom-elements-tab-1x.jpg 1x,
+                                                                    ./images/photo-tab/bathroom-elements-tab-2x.jpg 2x                                           " />
+                        <source media="(min-width:414px)" srcset="
+                                                                    ./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg 1x,
+                                                                    ./images/photo-mob/arrangement-bathroom-elements-mob-2x.jpg 2x
+                                                                " />
+                        <img src="./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg"
+                            alt="Фото для слайдера" />
+                    </picture>
+                </div>
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                                                                    ./images/photo-desk/cup-tea-1x.jpg 1x,
+                                                                                    ./images/photo-desk/cup-tea-2x.jpg 2x
+                                                                                " />
+                        <source media="(min-width:1024px)"
+                            srcset="
+                                                                                    ./images/photo-tab/cup-tea-tab-1x.jpg 1x,
+                                                                                    ./images/photo-tab/cup-tea-tab-2x.jpg 2x                                                               " />
+                        <source media="(min-width:414px)"
+                            srcset="
+                                                                                    ./images/photo-mob/cup-tea-mob-1x.jpg 1x,
+                                                                                    ./images/photo-mob/cup-tea-mob-2x.jpg 2x              " />
+                        <img src="./images/photo-mob/cup-tea-mob-1x.jpg" alt="Фото для слайдера" />
+                    </picture>
+                </div>
+            </div>
             <div class="rooms-btn">
                 <button class="hero-mainpage__button rooms-btn__item" type="button">
-                    <a href="">Детальніше</a>
+                    <a href="./room.html">Детальніше</a>
                 </button>
-                <button class="hero-mainpage__button rooms-btn__item" type="button">Переглянути
+                <button class="hero-mainpage__button rooms-btn__item js-open-modal" type="button"
+                    data-modal="3">Переглянути
                     ціни</button>
             </div>
         </div>
@@ -120,13 +254,80 @@
                     alt="Двомісний номер">
             </picture>
         </div>
-        <div class="rooms-wrap-bottom">
-            <div class="slider"></div>
+        <div class="slider-pos slider-pos--rooms rooms-wrap-bottom">
+            <div class="double-slider double-slider--rooms">
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                        ./images/photo-desk/bathroom-1x.jpg 1x,
+                                        ./images/photo-desk/bathroom-2x.jpg 2x       " />
+                        <source media="(min-width:1024px)" srcset="
+                                        ./images/photo-tab/bathroom-elements-tab-1x.jpg 1x,
+                                        ./images/photo-tab/bathroom-elements-tab-2x.jpg 2x      " />
+                        <source media="(min-width:414px)" srcset="
+                                        ./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg 1x,
+                                        ./images/photo-mob/arrangement-bathroom-elements-mob-2x.jpg 2x     " />
+                        <img src="./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg"
+                            alt="Фото для слайдера" />
+                    </picture>
+                </div>
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                                        ./images/photo-desk/cup-tea-1x.jpg 1x,
+                                                        ./images/photo-desk/cup-tea-2x.jpg 2x                      " />
+                        <source media="(min-width:1024px)" srcset="
+                                                        ./images/photo-tab/cup-tea-tab-1x.jpg 1x,
+                                                        ./images/photo-tab/cup-tea-tab-2x.jpg 2x               " />
+                        <source media="(min-width:414px)" srcset="
+                                                        ./images/photo-mob/cup-tea-mob-1x.jpg 1x,
+                                                        ./images/photo-mob/cup-tea-mob-2x.jpg 2x
+                                                " />
+                        <img src="./images/photo-mob/cup-tea-mob-1x.jpg" alt="Фото для слайдера" />
+                    </picture>
+                </div>
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                                                    ./images/photo-desk/bathroom-1x.jpg 1x,
+                                                                    ./images/photo-desk/bathroom-2x.jpg 2x
+                                                                " />
+                        <source media="(min-width:1024px)"
+                            srcset="
+                                                                    ./images/photo-tab/bathroom-elements-tab-1x.jpg 1x,
+                                                                    ./images/photo-tab/bathroom-elements-tab-2x.jpg 2x                                           " />
+                        <source media="(min-width:414px)" srcset="
+                                                                    ./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg 1x,
+                                                                    ./images/photo-mob/arrangement-bathroom-elements-mob-2x.jpg 2x
+                                                                " />
+                        <img src="./images/photo-mob/arrangement-bathroom-elements-mob-1x.jpg"
+                            alt="Фото для слайдера" />
+                    </picture>
+                </div>
+                <div>
+                    <picture class="">
+                        <source media="(min-width:1280px)" srcset="
+                                                                                    ./images/photo-desk/cup-tea-1x.jpg 1x,
+                                                                                    ./images/photo-desk/cup-tea-2x.jpg 2x
+                                                                                " />
+                        <source media="(min-width:1024px)"
+                            srcset="
+                                                                                    ./images/photo-tab/cup-tea-tab-1x.jpg 1x,
+                                                                                    ./images/photo-tab/cup-tea-tab-2x.jpg 2x                                                               " />
+                        <source media="(min-width:414px)"
+                            srcset="
+                                                                                    ./images/photo-mob/cup-tea-mob-1x.jpg 1x,
+                                                                                    ./images/photo-mob/cup-tea-mob-2x.jpg 2x              " />
+                        <img src="./images/photo-mob/cup-tea-mob-1x.jpg" alt="Фото для слайдера" />
+                    </picture>
+                </div>
+            </div>
             <div class="rooms-btn">
                 <button class="hero-mainpage__button rooms-btn__item" type="button">
-                    <a href="">Детальніше</a>
+                    <a href="./room.html">Детальніше</a>
                 </button>
-                <button class="hero-mainpage__button rooms-btn__item" type="button">Переглянути
+                <button class="hero-mainpage__button rooms-btn__item js-open-modal" type="button"
+                    data-modal="3">Переглянути
                     ціни</button>
             </div>
         </div>

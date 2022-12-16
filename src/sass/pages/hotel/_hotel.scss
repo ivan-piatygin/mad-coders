@@ -9,38 +9,59 @@
   padding-bottom: 32px;
   @include tablet {
     padding-top: 62px;
-    padding-bottom: 40px;
+    padding-bottom: 104px;
   }
   @include desktop {
     padding-top: 72px;
+    padding-bottom: 112px;
   }
-  &:nth-child(2n) .rooms-info {
+  &:nth-child(2n + 1) .rooms-info {
     margin-left: 67px;
   }
-  &:nth-child(2n) .rooms-info__slogan {
+  &:nth-child(2n + 1) .rooms-info__slogan {
     text-align: end;
   }
-  &:nth-child(2n) .rooms-info__logo {
+  &:nth-child(2n + 1) .rooms-info__logo {
     text-align: end;
   }
-  &:nth-child(2n) .rooms-wrap-top__img {
+  &:nth-child(2n + 1) .rooms-wrap-top__img {
     margin-left: 0;
   }
-  &:nth-child(2n) .slider {
-    margin-left: auto;
+
+  &:nth-child(2n + 1) .slick-arrow.slick-next {
+    right: 0;
+    @include tablet {
+      right: 335px;
+    }
+    @include desktop {
+      right: 411px;
+    }
   }
 
-  &:nth-child(2n) .rooms-wrap-top {
+  &:nth-child(2n + 1) .slick-arrow.slick-prev {
+    left: 290px;
+    @include tablet {
+      left: 0;
+    }
+    @include desktop {
+      left: 0;
+    }
+  }
+  // &:nth-child(2n + 1) .slider {
+  //   margin-left: auto;
+  // }
+
+  &:nth-child(2n + 1) .rooms-wrap-top {
     @include tablet {
       flex-direction: row-reverse;
     }
   }
-  &:nth-child(2n) .rooms-wrap-bottom {
+  &:nth-child(2n + 1) .rooms-wrap-bottom {
     @include tablet {
       flex-direction: row-reverse;
     }
   }
-  &:nth-child(2n) .rooms-info {
+  &:nth-child(2n + 1) .rooms-info {
     @include tablet {
       margin-left: 45px;
     }
@@ -57,7 +78,7 @@
 }
 
 .rooms-wrap-top {
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
   @include tablet {
     margin-bottom: 48px;
     display: flex;
@@ -146,22 +167,8 @@
   }
 }
 
-.slider {
-  width: 284px;
-  height: 246px;
-  border: solid palevioletred;
-  @include tablet {
-    width: 428px;
-    height: 258px;
-  }
-  @include desktop {
-    width: 548px;
-    height: 327px;
-  }
-}
-
 .rooms-btn {
-  margin-top: 20px;
+  margin-top: 72px;
   @include tablet {
     margin-top: 0;
   }
@@ -181,5 +188,29 @@
 @media screen and (max-width: 1023px) {
   .rooms-info {
     margin-bottom: 32px;
+  }
+}
+
+.slider-pos--rooms {
+  bottom: 0;
+}
+
+.double-slider--rooms {
+  padding-bottom: 0;
+  @include tablet {
+    & .slick-arrow.slick-next {
+      right: 20px;
+    }
+    & .slick-arrow.slick-prev {
+      left: 320px;
+    }
+  }
+  @include desktop {
+    & .slick-arrow.slick-next {
+      right: 0;
+    }
+    & .slick-arrow.slick-prev {
+      left: 400px;
+    }
   }
 }

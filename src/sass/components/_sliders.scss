@@ -1,346 +1,323 @@
-
-
 // ---------------------- Потрійний слайдер ---------------------- \\
 .tripple-slider {
-    min-width: 0;
-    position: relative;
+  min-width: 0;
+  position: relative;
 
-    @media screen and(max-width: $tablet) {
-        padding-bottom: 80px;
-        max-width: 100%;
-        margin-left: 40px;
-    }
+  @media screen and(max-width: $tablet) {
+    padding-bottom: 80px;
+    max-width: 100%;
+    margin-left: 40px;
+  }
 
+  @media screen and(min-width: $mobile) {
+    max-width: 370px;
+  }
 
-    @media screen and(min-width: $mobile) {
-        max-width: 370px;
+  @media screen and(min-width: $tablet) {
+    max-width: 660px;
+  }
 
-
-    }
-
-    @media screen and(min-width: $tablet) {
-        max-width: 660px;
-
-    }
-
-    @media screen and(min-width: $desktop) {
-        max-width: 723px;
-        height: 270px;
-    }
+  @media screen and(min-width: $desktop) {
+    max-width: 723px;
+    height: 270px;
+  }
 }
 
 .slick-track {
-    display: flex;
-    align-items: flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .slick-list {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .slick-arrow {
-    position: absolute;
-    font-size: 0;
-    z-index: 10;
-    width: 30px;
-    height: 17px;
+  position: absolute;
+  font-size: 0;
+  z-index: 10;
+  width: 30px;
+  height: 17px;
 
-    @media screen and(max-width: $tablet) {
-        top: 300px;
-    }
+  @media screen and(max-width: $tablet) {
+    top: 300px;
+  }
 
-    @media screen and(min-width: $mobile) {
-        top: 302px;
-    }
+  @media screen and(min-width: $mobile) {
+    top: 302px;
+  }
 
-    @media screen and(min-width:$tablet) {
-        top: 312px;
-    }
+  @media screen and(min-width:$tablet) {
+    top: 312px;
+  }
 
-    @media screen and(min-width:$desktop) {
-        top: 310px;
-    }
-
-
+  @media screen and(min-width:$desktop) {
+    top: 310px;
+  }
 }
 
 .slick-arrow.slick-next {
-    border: none;
-    background-color: transparent;
-    background-position: center;
-    background-image: url(../images/Vectorright.svg);
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-image: url(../images/Vectorright.svg);
 
-    @media screen and(min-width: 320px) {
-        right: 220px;
-    }
+  @media screen and(min-width: 320px) {
+    right: 220px;
+  }
 
-    @media screen and(min-width: 350px) {
-        right: 250px;
-    }
+  @media screen and(min-width: 350px) {
+    right: 250px;
+  }
 
+  @media screen and(min-width: $mobile) {
+    right: 277px;
+  }
 
-    @media screen and(min-width: $mobile) {
-        right: 277px;
-    }
+  @media screen and(min-width: $tablet) {
+    right: 566px;
+  }
 
-    @media screen and(min-width: $tablet) {
-        right: 566px;
-    }
+  @media screen and(min-width: $desktop) {
+    right: 629px;
+  }
 
-    @media screen and(min-width: $desktop) {
-        right: 629px;
-    }
-
-    &:hover,
-    &:focus {
-        background-image: url(../images/Vectorrightbrown.svg);
-    }
+  &:hover,
+  &:focus {
+    background-image: url(../images/Vectorrightbrown.svg);
+  }
 }
 
 .slick-arrow.slick-prev {
-    border: none;
-    background-color: transparent;
+  border: none;
+  background-color: transparent;
 
-    background-image: url(../images/Vectorleft.svg);
+  background-image: url(../images/Vectorleft.svg);
 
-@media screen and(min-width: $mobile) {
-        left: 0;
-    }
+  @media screen and(min-width: $mobile) {
+    left: 0;
+  }
 
-    @media screen and(min-width: $tablet) {
-        left: 0;
-    }
+  @media screen and(min-width: $tablet) {
+    left: 0;
+  }
 
-    @media screen and(min-width: $desktop) {
-        left: 0;
-    }
+  @media screen and(min-width: $desktop) {
+    left: 0;
+  }
 
-    &:hover,
-    &:focus {
-        background-image: url(../images/Vectorleft-brown.svg);
-    }
+  &:hover,
+  &:focus {
+    background-image: url(../images/Vectorleft-brown.svg);
+  }
 }
 
 .slick-slide {
-    width: auto;
-    margin-right: 15px;
-    margin-left: 15px;
+  width: auto;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
 // ---------------------- Потрійний слайдер--mirror ----------------------\\
 
-.tripple-slider--mirror .slick-arrow.slick-next{
-@media screen and(min-width: $mobile) {
-        right: 0;
-    }
+.tripple-slider--mirror .slick-arrow.slick-next {
+  @media screen and(min-width: $mobile) {
+    right: 0;
+  }
 
-    @media screen and(min-width: $tablet) {
-        right: 0;
-    }
+  @media screen and(min-width: $tablet) {
+    right: 0;
+  }
 
-    @media screen and(min-width: $desktop) {
-        right: 0;
-    }
+  @media screen and(min-width: $desktop) {
+    right: 0;
+  }
 }
 
-.tripple-slider--mirror .slick-arrow.slick-prev{
+.tripple-slider--mirror .slick-arrow.slick-prev {
+  @media screen and(min-width: $mobile) {
+    left: 285px;
+  }
 
-    @media screen and(min-width: $mobile) {
-            left: 285px;
-        }
+  @media screen and(min-width: $tablet) {
+    left: 566px;
+  }
 
-    @media screen and(min-width: $tablet) {
-            left: 566px;
-        }
-    
-        @media screen and(min-width: $desktop) {
-            left: 604px;
-        }
+  @media screen and(min-width: $desktop) {
+    left: 604px;
+  }
 }
 
 // ---------------------- Подвійний слайдер ---------------------- \\
 .double-slider {
-    min-width: 0;
-    position: relative;
+  min-width: 0;
+  position: relative;
 
-    @media screen and(max-width: $tablet) {
-        padding-top: 32px;
-        padding-bottom: 72px;
-    }
+  @media screen and(max-width: $tablet) {
+    padding-top: 32px;
+    padding-bottom: 72px;
+  }
 
+  @media screen and(min-width: $mobile) {
+    max-width: 100%;
+  }
 
-    @media screen and(min-width: $mobile) {
-        max-width: 100%;
+  @media screen and(min-width: $tablet) {
+    max-width: 440px;
+  }
 
-
-    }
-
-    @media screen and(min-width: $tablet) {
-        max-width: 440px;
-
-    }
-
-    @media screen and(min-width: $desktop) {
-        max-width: 520px;
-        padding-bottom: 122px;
-    }
+  @media screen and(min-width: $desktop) {
+    max-width: 520px;
+    padding-bottom: 122px;
+  }
 }
 .double-slider .slick-list {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .slider-pos {
-    
-    @media screen and(min-width:$tablet) {
-        position: absolute;
-        bottom: 96px;
-        left: 0;
-    }
-   @media screen and(min-width:$desktop) {
-        bottom: 0px;
-   }
-}
-
-.slider-pos.slider-pos--mirror{
-    @media screen and(min-width:$tablet) {
-        left: auto;
-        right: 0;
-    }
-}
-
-
-.double-slider .slick-arrow {
+  @media screen and(min-width:$tablet) {
     position: absolute;
-    font-size: 0;
-    z-index: 10;
-    width: 30px;
-    height: 17px;
+    bottom: 96px;
+    left: 0;
+  }
+  @media screen and(min-width:$desktop) {
+    bottom: 0px;
+  }
+}
+
+.slider-pos.slider-pos--mirror {
+  @media screen and(min-width:$tablet) {
+    left: auto;
+    right: 0;
+  }
 }
 
 .double-slider .slick-arrow {
-    position: absolute;
-    font-size: 0;
-    z-index: 10;
-    width: 30px;
-    height: 17px;
+  position: absolute;
+  font-size: 0;
+  z-index: 10;
+  width: 30px;
+  height: 17px;
+}
 
-    @media screen and(min-width:320px) {
-        top: 304px;
-    }
+.double-slider .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  z-index: 10;
+  width: 30px;
+  height: 17px;
 
-    @media screen and(min-width: $mobile) {
-        top: 304px;
-    }
+  @media screen and(min-width:320px) {
+    top: 304px;
+  }
 
-    @media screen and(min-width:$tablet) {
-        top: 230px;
-    }
+  @media screen and(min-width: $mobile) {
+    top: 304px;
+  }
 
-    @media screen and(min-width:$desktop) {
-        top: 292px;
-    }
+  @media screen and(min-width:$tablet) {
+    top: 230px;
+  }
 
-
+  @media screen and(min-width:$desktop) {
+    top: 292px;
+  }
 }
 
 .double-slider .slick-arrow.slick-next {
-    border: none;
-    background-color: transparent;
-    background-position: center;
-    background-image: url(../images/Vectorright-black.svg);
+  border: none;
+  background-color: transparent;
+  background-position: center;
+  background-image: url(../images/Vectorright-black.svg);
 
-    @media screen and(max-width: 350px) {
-        right: 200px;
-    }
+  @media screen and(max-width: 350px) {
+    right: 200px;
+  }
 
-    @media screen and(min-width: 350px) {
-        right: 270px;
-    }
+  @media screen and(min-width: 350px) {
+    right: 270px;
+  }
 
-    @media screen and(min-width:$mobile) {
-        right: 290px;
-    }
-    @media screen and(min-width: $tablet) {
-        right: 335px;
-    }
+  @media screen and(min-width:$mobile) {
+    right: 290px;
+  }
+  @media screen and(min-width: $tablet) {
+    right: 335px;
+  }
 
-    @media screen and(min-width: $desktop) {
-        right: 411px;
-    }
+  @media screen and(min-width: $desktop) {
+    right: 411px;
+  }
 
-    &:hover,
-    &:focus {
-        background-image: url(../images/Vectorrightbrown.svg);
-    }
+  &:hover,
+  &:focus {
+    background-image: url(../images/Vectorrightbrown.svg);
+  }
 }
 
 .double-slider .slick-arrow.slick-prev {
+  left: 0;
+  border: none;
+  background-color: transparent;
+
+  background-image: url(../images/Vectorleft-black.svg);
+
+  @media screen and(min-width: $tablet) {
     left: 0;
-    border: none;
-    background-color: transparent;
+  }
 
-    background-image: url(../images/Vectorleft-black.svg);
+  @media screen and(min-width: $desktop) {
+    left: 0;
+  }
 
-
-
-    @media screen and(min-width: $tablet) {
-        left: 0;
-    }
-
-    @media screen and(min-width: $desktop) {
-        left: 0;
-    }
-
-    &:hover,
-    &:focus {
-        background-image: url(../images/Vectorleft-brown.svg);
-    }
+  &:hover,
+  &:focus {
+    background-image: url(../images/Vectorleft-brown.svg);
+  }
 }
 
 // ---------------------- Подвійний слайдер--mirror ---------------------- \\
 
-.double-slider--mirror .slick-arrow.slick-next{
+.double-slider--mirror .slick-arrow.slick-next {
+  @media screen and(max-width: $tablet) {
+    right: 0;
+  }
 
-        @media screen and(max-width: $tablet) {
-            right: 0;
-        }
-    
-        @media screen and(min-width: $tablet) {
-            right: 20px;
-        }
+  @media screen and(min-width: $tablet) {
+    right: 20px;
+  }
 
-        @media screen and(min-width: $desktop) {
-            right: 0;
-        }
+  @media screen and(min-width: $desktop) {
+    right: 0;
+  }
 }
 
-.double-slider--mirror .slick-arrow.slick-prev{
-@media screen and(max-width: 320px) {
-        left: 170px;
-    }
-    @media screen and(min-width: 320px) {
-            left: 220px;
-        }
-        @media screen and(min-width: 350px) {
-            left: 250px;
-        }
+.double-slider--mirror .slick-arrow.slick-prev {
+  @media screen and(max-width: 320px) {
+    left: 170px;
+  }
+  @media screen and(min-width: 320px) {
+    left: 220px;
+  }
+  @media screen and(min-width: 350px) {
+    left: 250px;
+  }
 
-    @media screen and(min-width: $mobile) {
-            left: 290px;
-        }
+  @media screen and(min-width: $mobile) {
+    left: 290px;
+  }
 
-    @media screen and(min-width: $tablet) {
-            left: 320px;
-        }
-    
-        @media screen and(min-width: $desktop) {
-            left: 400px;
-        }
+  @media screen and(min-width: $tablet) {
+    left: 320px;
+  }
+
+  @media screen and(min-width: $desktop) {
+    left: 400px;
+  }
 }
-
 
 // ---------------------- Подвійний слайдер--rooms ---------------------- \\
-.slider-pos--rooms{
-position: relative;
+.slider-pos--rooms {
+  position: relative;
 }
-
