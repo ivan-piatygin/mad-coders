@@ -31,7 +31,13 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/photo-tab/main-room-double-tab-1x.jpg');
+      background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 54.17%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/photo-tab/main-room-double-tab-2x.jpg');
     }
   }
 
@@ -53,7 +59,7 @@
           rgba(0, 0, 0, 0.55) 54.17%,
           rgba(0, 0, 0, 0) 100%
         ),
-        url('../images/photo-desk/main-room-double-desk-1x.jpg');
+        url('../images/photo-desk/main-room-double-desk-2x.jpg');
     }
   }
 }
@@ -85,7 +91,8 @@
   color: #ffffff;
 
   @media screen and (min-width: 1024px) {
-    width: 320px;
+    width: 400px;
+    font-size: 16px;
   }
 }
 
@@ -105,13 +112,24 @@
 @media screen and (min-width: 1024px) {
   .hero-homepage__button--room {
     position: absolute;
-    right: 77px;
-    bottom: 22px;
+    right: 14px;
+    bottom: -27px;
+  }
+
+    .hero__address--room {
+    bottom: -50px;
   }
 }
+
 
 @media screen and (min-width: 1280px) {
   .hero__address--room {
     display: none;
   }
+
+    .hero-homepage__button--room {
+    bottom: 33px;
+    right: 77px;
+  }
 }
+
