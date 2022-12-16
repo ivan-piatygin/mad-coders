@@ -71,8 +71,8 @@ width: 100%;
       screen and (min-resolution: 2dppx) {
       background-image: linear-gradient(
           to bottom,
-          rgba(0, 0, 0, 0.65),
-          rgba(0, 0, 0, 0.65)
+          $hero-background,
+          $hero-background
         ),
         url('../images/photo-desk/homepage-desk-2x.jpg');
     }
@@ -123,6 +123,7 @@ width: 100%;
 @media screen and (min-width: 1024px) {
   .hero__pre-title {
     margin-bottom: 56px;
+    margin-right: 43px;
   }
 }
 
@@ -164,6 +165,7 @@ width: 100%;
 @media screen and (min-width: 1024px) {
   .hero__text {
     margin-bottom: 137px;
+    margin-right: 44px;
   }
 }
 
@@ -186,6 +188,7 @@ width: 100%;
     right: 10px;
     width: 210px;
     height: 47px;
+    padding-left: 32px;
   }
 }
 
@@ -212,7 +215,7 @@ width: 100%;
 
     .hero__address--hotel {
     left: 85px;
-    bottom: -314px;
+    bottom: -289px;
   }
 
       .hero__address--rest  {
@@ -239,11 +242,12 @@ width: 100%;
 
 .hero__address-item {
  position: absolute;
- left: 11px;
+ left: 6px;
  bottom: 14px;
 
  @media screen and (min-width:1024px) {
     bottom: 17px;
+    left: 11px;
  }
 
 }
@@ -296,7 +300,7 @@ width: 100%;
         }
 
         .hero__button--hotel{
-            margin-top: 15px;
+            margin-top: -10px;
             right: 77px;
         }
         
