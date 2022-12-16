@@ -9,10 +9,8 @@ position: relative;
 display: flex;
 justify-content: center;
 max-width: 100%;
-height: 740px;
-@media (min-width: $tablet) {
-  height: 720px;
-}
+
+
 }
 .header__body {
 display: flex;
