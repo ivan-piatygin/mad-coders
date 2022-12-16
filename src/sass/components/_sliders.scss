@@ -128,7 +128,12 @@
 }
 
 // ---------------------- Потрійний слайдер--mirror ----------------------\\
-
+.tripple-slider--mirror{
+    @media screen and(max-width: $tablet) {
+            margin-left: 0;
+            margin-right: 40px;
+        }
+}
 .tripple-slider--mirror .slick-arrow.slick-next{
 @media screen and(min-width: $mobile) {
         right: 0;
@@ -145,9 +150,15 @@
 
 .tripple-slider--mirror .slick-arrow.slick-prev{
 
+    @media screen and(min-width:320px) {
+        
+    }
+
     @media screen and(min-width: $mobile) {
             left: 285px;
         }
+
+        
 
     @media screen and(min-width: $tablet) {
             left: 566px;

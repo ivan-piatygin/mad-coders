@@ -272,6 +272,22 @@ flex-direction: row;
 }
 }
 
+.map-width{
+    @media screen and(max-width:$tablet) {
+            height: 220px;
+        }
+    @media screen and(min-width:$mobile) {
+        width: 384px;
+    }
+
+@media screen and(min-width:$tablet) {
+    width: 535px;
+}
+@media screen and(min-width:$tablet) {
+    width: 634px;
+}
+}
+
 
 
 
