@@ -106,7 +106,14 @@
   .hero-homepage__button--room {
     position: absolute;
     right: 77px;
-    bottom: 22px;
+    bottom: -27px;
+  }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .hero__address--room {
+    bottom: -70px;
   }
 }
 
@@ -114,4 +121,9 @@
   .hero__address--room {
     display: none;
   }
+
+    .hero-homepage__button--room {
+    bottom: 23px;
+  }
 }
+
