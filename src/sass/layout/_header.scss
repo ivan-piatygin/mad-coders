@@ -57,11 +57,15 @@ padding-bottom: 16px;
 .header__item > .header__link {
 padding-top: 28px;
 padding-bottom: 28px; 
-color: $brown-text-color; 
+color: $accent-color; 
 text-decoration: none;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+&:hover {
+  color: $brown-text-color;
+}
 @media (min-width: 1024px) {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 36px;
+  padding-bottom: 36px;
 }
 }
 .header__item {
@@ -130,6 +134,11 @@ text-decoration: none;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #ffffff;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover{
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
 .header__link__phone {
   text-decoration: none;
@@ -161,7 +170,7 @@ text-decoration: none;
     display: flex;
     // align-items: center;
     margin-left: auto;
-    padding-top: 32px;
+    padding-top: 36px;
   }
 }
 .socials__list {
@@ -182,7 +191,15 @@ text-decoration: none;
  margin-left: 59px;
   }
 }
+// .socials__link {
+//    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   &:hover .socials__icon{
+//     fill: $accent-color;
+//   }
+// }
 .socials__icon {
   fill: $brown-text-color;
   opacity: 0.7;
+ 
+  
 }
