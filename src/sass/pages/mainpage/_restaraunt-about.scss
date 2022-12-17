@@ -96,6 +96,10 @@
 
   @media screen and (min-width: 1024px) {
     gap: 48px;
+    padding-bottom: 210px;
+  }
+  @media screen and(min-width:$desktop) {
+    padding-bottom: 197px;
   }
 }
 
