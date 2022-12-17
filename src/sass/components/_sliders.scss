@@ -120,6 +120,15 @@
 
 // ---------------------- Потрійний слайдер--mirror ----------------------\\
 
+.tripple-slider--mirror{
+  margin-left: 0px;
+  @media screen and(min-width: $tablet) {
+    padding-bottom: 0px;
+    
+    
+  }
+}
+
 .tripple-slider--mirror .slick-arrow.slick-next {
   @media screen and(min-width: $mobile) {
     right: 0;
