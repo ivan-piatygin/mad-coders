@@ -266,14 +266,14 @@ display: flex;
 justify-content: space-between;
 flex-direction: row;
 
-@media screen and(max-width:$tablet) {
+@media screen and(max-width:1023px) {
     flex-direction: column;
     align-items: center;
 }
 }
 
 .map-width{
-    @media screen and(max-width:$tablet) {
+    @media screen and(max-width:1023px) {
             height: 220px;
         }
     @media screen and(min-width:$mobile) {
