@@ -1,75 +1,67 @@
-// .hero--room {
-//   background-image: linear-gradient(
-//       to bottom,
-//       #000000 0%,
-//       rgba(0, 0, 0, 0.55) 54.17%,
-//       rgba(0, 0, 0, 0) 100%
-//     ),
-//     url('../images/photo-mob/main-room-double-mob-1x.jpg');
+.hero--room {
+  background-image: linear-gradient(
+      to bottom,
+      #000000 0%,
+      rgba(0, 0, 0, 0.55) 54.17%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('../images/photo-mob/main-room-double-mob-1x.jpg');
 
-//   @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     background-image: linear-gradient(
-//         to bottom,
-//         #000000 0%,
-//         rgba(0, 0, 0, 0.55) 54.17%,
-//         rgba(0, 0, 0, 0) 100%
-//       ),
-//       url('../images/photo-mob/main-room-double-mob-2x.jpg');
-//   }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 54.17%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/photo-mob/main-room-double-mob-2x.jpg');
+  }
 
-//   @media screen and (min-width: $tablet) {
-//     background-image: linear-gradient(
-//         to bottom,
-//         #000000 0%,
-//         rgba(0, 0, 0, 0.55) 54.17%,
-//         rgba(0, 0, 0, 0) 100%
-//       ),
-//       url('../images/photo-tab/main-room-double-tab-1x.jpg');
+  @media screen and (min-width: $tablet) {
+    background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 54.17%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/photo-tab/main-room-double-tab-1x.jpg');
 
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//         to bottom,
-//         #000000 0%,
-//         rgba(0, 0, 0, 0.55) 54.17%,
-//         rgba(0, 0, 0, 0) 100%
-//       ),
-//       url('../images/photo-tab/main-room-double-tab-2x.jpg');
-//     }
-//   }
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 54.17%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/photo-tab/main-room-double-tab-2x.jpg');
+    }
+  }
 
-//   @media screen and (min-width: $desktop) {
-//     background-image: linear-gradient(
-//         to bottom,
-//         #000000 0%,
-//         rgba(0, 0, 0, 0.55) 54.17%,
-//         rgba(0, 0, 0, 0) 100%
-//       ),
-//       url('../images/photo-desk/main-room-double-desk-1x.jpg');
+  @media screen and (min-width: $desktop) {
+    background-image: linear-gradient(
+        to bottom,
+        #000000 0%,
+        rgba(0, 0, 0, 0.55) 54.17%,
+        rgba(0, 0, 0, 0) 100%
+      ),
+      url('../images/photo-desk/main-room-double-desk-1x.jpg');
 
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//           to bottom,
-//           #000000 0%,
-//           rgba(0, 0, 0, 0.55) 54.17%,
-//           rgba(0, 0, 0, 0) 100%
-//         ),
-//         url('../images/photo-desk/main-room-double-desk-2x.jpg');
-//     }
-//   }
-// }
-
-.container--room{
-  padding-top: 181px;
-  position: absolute;
-  left: 53%;
-  top: 47%;
-  transform: translate(-50%, -50%);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          #000000 0%,
+          rgba(0, 0, 0, 0.55) 54.17%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url('../images/photo-desk/main-room-double-desk-2x.jpg');
+    }
+  }
 }
 
 .hero--room__title {
@@ -141,10 +133,3 @@
   }
 }
 
-.slick-slide{
-  float: left;
-}
-
-.slick-track{
-  display: block;
-}
