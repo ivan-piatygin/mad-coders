@@ -188,18 +188,23 @@
   @media screen and(min-width:$tablet) {
     position: absolute;
     bottom: 96px;
-    left: 0;
+    left: 47px;
   }
   @media screen and(min-width:$desktop) {
     bottom: 0px;
+    left: 85px;
   }
 }
 
 .slider-pos.slider-pos--mirror {
   @media screen and(min-width:$tablet) {
     left: auto;
-    right: 0;
+    right: 25px;
   }
+
+    @media screen and(min-width:$desktop) {
+      right: 85px;
+    }
 }
 
 .double-slider .slick-arrow {
@@ -329,4 +334,14 @@
 // ---------------------- Подвійний слайдер--rooms ---------------------- \\
 .slider-pos--rooms {
   position: relative;
+}
+
+// ---------------------- Одинарний слайдер--rooms ---------------------- \\
+
+.single-slider{
+  width: 100%;
+}
+
+.single-slider__picture{
+  width: 100%;
 }
