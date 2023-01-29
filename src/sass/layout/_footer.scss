@@ -17,6 +17,7 @@
 .footer-logo {
   @extend %logo;
   color: $accent-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include font(40px, calc(43 / 40), 700, 0.3em);
   @media screen and(max-width:1023px) {
     margin-left: 59px;
@@ -27,6 +28,9 @@
     font-size: 64px;
     line-height: calc(69 / 64);
     margin-left: 0px;
+  }
+  &:hover, &:focus{
+   color: $brown-text-color;
   }
 }
 
@@ -75,10 +79,11 @@
   font-family: $montserrat-font;
   display: inline-block;
   color: $accent-color;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include font(20px, calc(24 / 20), 500, 0.02em);
   &:hover,
   &:focus {
-    color: white;
+    color: $brown-text-color;
   }
 }
 
@@ -105,17 +110,22 @@
     border: 0.5px solid $accent-color;
     border-radius: 2px;
     width: 144px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: $white;
+      border-color: $brown-text-color;
     }
     &:not(:last-child) {
       margin-bottom: 12px;
     }
   }
+  &:hover .social__icon,
+  &:focus .social__icon{
+    opacity: 0.7;
+  }
   &:hover .social__name,
   &:focus .social__name {
-    color: black;
+    color: $brown-text-color;
   }
 }
 .social__name {
@@ -126,10 +136,7 @@
     font-family: 'Montserrat';
     @include font(16px, calc(20 / 16), 400, 00.02em);
     color: $accent-color;
-  }
-  &:hover,
-  &:focus {
-    color: $black;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -137,12 +144,10 @@
   display: inline-block;
   width: 24px;
   height: 24px;
-  opacity: 0.7;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include tablet {
     opacity: 1;
   }
-  &:hover,
-  &:focus {
-    fill: $black;
-  }
+  
 }
