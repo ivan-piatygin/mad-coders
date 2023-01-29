@@ -182,9 +182,15 @@ width: 100%;
 
   position: absolute;
 
-  border: 1px solid rgba(243, 198, 83, 0.7);
+  border: 1px solid;
+  border-color: $accent-color;
   border-radius: 2px;
+  transition: border-color $main-transition-duration $main-transtition-timing-function;
+  &:hover, &:focus{
+    border-color: $brown-text-color;
+  }
 
+  
 }
 
 
@@ -237,6 +243,10 @@ width: 100%;
   line-height: 1.2;
   letter-spacing: 0.01em;
   color: #e5e5e5;
+  transition:  color $main-transition-duration $main-transtition-timing-function;
+  .hero__address:hover &, .hero__address:focus &{
+    color: $brown-text-color;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -250,12 +260,14 @@ width: 100%;
  position: absolute;
  left: 6px;
  bottom: 14px;
-
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
  @media screen and (min-width:1024px) {
     bottom: 17px;
     left: 11px;
  }
-
+ .hero__address:hover &, .hero__address:focus & {
+  opacity: 0.7;
+ }
 }
 
 .hero_address-img {
